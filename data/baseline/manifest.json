@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-11-09",
+  "scoringCommit": "e104eb6da5f9509beceb563e92257ec5d314bc66",
+  "files": {
+    "results.jsonl": {
+      "sha256": "8fdd89beb845aebf24267018af89764cd41f3926ac3fef49be7245601f5c8a5f",
+      "bytes": 66628701
+    },
+    "sources.json": {
+      "sha256": "a399a0df31e582925c175b8945490ec567e916a6bf8f8759ce9516abfc381a54",
+      "bytes": 40478
+    },
+    "static.json": {
+      "sha256": "805cd262a3578efa3248ab1717ed3d18dd6c369ff77370188e1ccfd130f0389b",
+      "bytes": 791515,
+      "url": "https://oier.api.baoshuo.dev/static.06eadb4.json",
+      "sha512": "06eadb489fe594214565745a038d539fde8a69afeb720a3d916f9ff8d08ffaa91fa41a3ea6e6c108850dd08b5ae5a624bccf6fad74ce4d29f31534cfdea3eb1e"
+    },
+    "result.txt": {
+      "sha256": "647a59f45e94f57d8e3a5b112046bf9c30bbbc1640e777e7a54590de3863210d",
+      "bytes": 11033410,
+      "url": "https://oier.api.baoshuo.dev/result.2997706.txt",
+      "sha512": "2997706bcf6e56c58ece4746781425c23ef246b69a0bacc1a71f50aa55d14014a8e2972e1b361ffc1a32edef2d1d2a79ca009133d4b427f1c8d965eb8a109180"
+    },
+    "raw.txt": {
+      "sha256": "e915f051fcdddd0df66835d51873470f5824e10eb5228cd9d5f2efcef7c1b3e2",
+      "bytes": 24668527,
+      "url": "https://raw.githubusercontent.com/OIerDb-ng/OIerDb/e104eb6da5f9509beceb563e92257ec5d314bc66/data/raw.txt"
+    },
+    "contests.json": {
+      "sha256": "eedffa5b476a8242aaca4e4af15456093e00f54fc79b1ef1efda8d0b0e07132a",
+      "bytes": 18569,
+      "url": "https://raw.githubusercontent.com/OIerDb-ng/OIerDb/e104eb6da5f9509beceb563e92257ec5d314bc66/data/contests.json"
+    },
+    "scoring.json": {
+      "sha256": "ab2c40de4d226951f2082276193b49fdf69196cf1ccb91dc75efd9e3b56df7ae",
+      "bytes": 267,
+      "url": "https://raw.githubusercontent.com/OIerDb-ng/OIerDb/e104eb6da5f9509beceb563e92257ec5d314bc66/data/scoring.json"
+    },
+    "surnames.json": {
+      "sha256": "7cf63fd0448beb5dc330340bf6756b66b5011e1ef42182249bd1a2191338fe4b",
+      "bytes": 339,
+      "url": "https://raw.githubusercontent.com/OIerDb-ng/OIerDb/e104eb6da5f9509beceb563e92257ec5d314bc66/data/surnames.json"
+    },
+    "name_exceptions.json": {
+      "sha256": "8b7d390c9eebc4384ece738e6de94437ad6b5b897d7ec20c07033269456ca200",
+      "bytes": 182,
+      "url": "https://raw.githubusercontent.com/OIerDb-ng/OIerDb/e104eb6da5f9509beceb563e92257ec5d314bc66/data/name_exceptions.json"
+    }
+  }
+}

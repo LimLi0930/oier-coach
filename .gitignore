@@ -1,0 +1,15 @@
+node_modules/
+dist/
+public/data/
+data/source-audit/
+data/cleaned/
+data/upstream/
+data/.site-build-*/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.env.local
+.taste-skill/
+test-results/
+playwright-report/
+*.log

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (() => {
+        let preference = "system";
+        try {
+          preference = localStorage.getItem("oier-coach-theme") || "system";
+        } catch {}
+        const dark =
+          preference === "dark" ||
+          (preference !== "light" &&
+            matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+        document.documentElement.style.colorScheme = dark ? "dark" : "light";
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/src/assets/coach-logo.png" />
+    <meta name="theme-color" content="#f5f7f7" />
+    <meta
+      name="description"
+      content="信奥教练榜，通过公开比赛资料追溯教练、学生与每一场成绩。支持按姓名、拼音首字母和省份检索。"
+    />
+    <title>信奥教练榜 · OIer Coach</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

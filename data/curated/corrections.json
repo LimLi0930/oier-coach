@@ -1,0 +1,5047 @@
+{
+  "schemaVersion": 1,
+  "identities": [],
+  "guidance": [],
+  "results": [],
+  "additionalResults": [
+    {
+      "result_id": "archive-noi2023-summer-001",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王茂骅",
+      "province": "浙江",
+      "school": "浙江省诸暨市海亮初级中学",
+      "grade": "初一",
+      "award": "金牌",
+      "score": "569",
+      "eligibility": "listed",
+      "coach_names": [
+        "黄志刚"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "黄志刚",
+          "names": [
+            "黄志刚"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-001-image",
+          "source_location": 1,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-002",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "孙恒喆",
+      "province": "浙江",
+      "school": "浙江省杭州第二中学",
+      "grade": "高一",
+      "award": "金牌",
+      "score": "544",
+      "eligibility": "listed",
+      "coach_names": [
+        "李建"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "李建",
+          "names": [
+            "李建"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-002-image",
+          "source_location": 2,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-003",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "严思珩",
+      "province": "北京",
+      "school": "中国人民大学附属中学",
+      "grade": "高一",
+      "award": "金牌",
+      "score": "544",
+      "eligibility": "listed",
+      "coach_names": [
+        "佟松龄",
+        "叶金毅"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "佟松龄、叶金毅",
+          "names": [
+            "佟松龄",
+            "叶金毅"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-003-image",
+          "source_location": 3,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-004",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "朱鹏睿",
+      "province": "北京",
+      "school": "北京亦庄实验中学",
+      "grade": "初三",
+      "award": "金牌",
+      "score": "529",
+      "eligibility": "listed",
+      "coach_names": [
+        "张敏"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张敏",
+          "names": [
+            "张敏"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-004-image",
+          "source_location": 4,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-005",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈睿泽",
+      "province": "江苏",
+      "school": "江苏省淮阴中学",
+      "grade": "高一",
+      "award": "金牌",
+      "score": "526",
+      "eligibility": "listed",
+      "coach_names": [
+        "薛志坚"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "薛志坚",
+          "names": [
+            "薛志坚"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-005-image",
+          "source_location": 5,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-006",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "张恒毅",
+      "province": "浙江",
+      "school": "杭州学军中学教育集团文渊中学",
+      "grade": "高一",
+      "award": "金牌",
+      "score": "517",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐先友",
+        "王嘉宏",
+        "周邦"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐先友、王嘉宏、周邦",
+          "names": [
+            "徐先友",
+            "王嘉宏",
+            "周邦"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-006-image",
+          "source_location": 6,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-007",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "刘恒熙",
+      "province": "浙江",
+      "school": "宁波市镇海蛟川书院",
+      "grade": "初三",
+      "award": "金牌",
+      "score": "517",
+      "eligibility": "listed",
+      "coach_names": [
+        "符水波",
+        "应平安"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "符水波、应平安",
+          "names": [
+            "符水波",
+            "应平安"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-007-image",
+          "source_location": 7,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-008",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈诺",
+      "province": "浙江",
+      "school": "杭州学军中学教育集团文渊中学",
+      "grade": "高一",
+      "award": "金牌",
+      "score": "516",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐先友",
+        "王嘉宏",
+        "周邦"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐先友、王嘉宏、周邦",
+          "names": [
+            "徐先友",
+            "王嘉宏",
+            "周邦"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-008-image",
+          "source_location": 8,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-009",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "张程皓",
+      "province": "北京",
+      "school": "北京师范大学实验中学丰台学校",
+      "grade": "初三",
+      "award": "金牌",
+      "score": "509",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡伟栋"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-gold",
+        "archive-noi2023-gold-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡伟栋",
+          "names": [
+            "胡伟栋"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-gold-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-009-image",
+          "source_location": 9,
+          "image_sha256": "646fcfc82a0f251815187a5266a7038b52a7b28ab1109f2a4e24ba950afdca82",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-010",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "胡晓虎",
+      "province": "广东",
+      "school": "深圳市耀华实验学校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "508",
+      "eligibility": "listed",
+      "coach_names": [
+        "刘溯",
+        "黄晶晶",
+        "兰帆"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "刘溯、黄晶晶、兰帆",
+          "names": [
+            "刘溯",
+            "黄晶晶",
+            "兰帆"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-010-image",
+          "source_location": 1,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-011",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "郑煦翔",
+      "province": "江苏",
+      "school": "南京外国语学校",
+      "grade": "初一",
+      "award": "银牌",
+      "score": "496",
+      "eligibility": "listed",
+      "coach_names": [
+        "张超",
+        "周弋",
+        "曹蓉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张超、周弋、曹蓉",
+          "names": [
+            "张超",
+            "周弋",
+            "曹蓉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-011-image",
+          "source_location": 2,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-012",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "武林",
+      "province": "北京",
+      "school": "北京市十一学校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "495",
+      "eligibility": "listed",
+      "coach_names": [
+        "汪星明",
+        "张炜其"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "汪星明、张炜其",
+          "names": [
+            "汪星明",
+            "张炜其"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-012-image",
+          "source_location": 3,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-013",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王孜研",
+      "province": "广东",
+      "school": "广州大学附属中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "492",
+      "eligibility": "listed",
+      "coach_names": [
+        "王晓鹏",
+        "曾德明",
+        "傅绍基"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王晓鹏、曾德明、傅绍基",
+          "names": [
+            "王晓鹏",
+            "曾德明",
+            "傅绍基"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-013-image",
+          "source_location": 4,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-014",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "董睿嘉",
+      "province": "广东",
+      "school": "广州市铁一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "482",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈旭龙",
+        "林琳",
+        "刘荣基"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈旭龙、林琳、刘荣基",
+          "names": [
+            "陈旭龙",
+            "林琳",
+            "刘荣基"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-014-image",
+          "source_location": 5,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-015",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴彦儒",
+      "province": "陕西",
+      "school": "西安铁一中分校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "482",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐保毅",
+        "艾庆兴",
+        "代建杉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐保毅、艾庆兴、代建杉",
+          "names": [
+            "徐保毅",
+            "艾庆兴",
+            "代建杉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-015-image",
+          "source_location": 6,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-016",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杜岩旭",
+      "province": "山东",
+      "school": "东营市胜利第一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "481",
+      "eligibility": "listed",
+      "coach_names": [
+        "杨梦柯",
+        "孔祥丽",
+        "刘雪"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "杨梦柯、孔祥丽、刘雪",
+          "names": [
+            "杨梦柯",
+            "孔祥丽",
+            "刘雪"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-016-image",
+          "source_location": 7,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-017",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "孔德锐",
+      "province": "广东",
+      "school": "广州市铁一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "480",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈旭龙",
+        "林琳",
+        "刘荣基"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈旭龙、林琳、刘荣基",
+          "names": [
+            "陈旭龙",
+            "林琳",
+            "刘荣基"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-017-image",
+          "source_location": 8,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-018",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "文凯杰",
+      "province": "北京",
+      "school": "北京师范大学附属实验中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "480",
+      "eligibility": "listed",
+      "coach_names": [
+        "于保红"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "于保红",
+          "names": [
+            "于保红"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-018-image",
+          "source_location": 9,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-019",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李青阳",
+      "province": "北京",
+      "school": "北京师范大学附属实验中学分校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "480",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡伟栋"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡伟栋",
+          "names": [
+            "胡伟栋"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-019-image",
+          "source_location": 10,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-020",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "龚咏乔",
+      "province": "湖南",
+      "school": "长沙市一中岳麓中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "478",
+      "eligibility": "listed",
+      "coach_names": [
+        "张浪",
+        "袁帅",
+        "曹毅"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张浪、袁帅、曹毅",
+          "names": [
+            "张浪",
+            "袁帅",
+            "曹毅"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-020-image",
+          "source_location": 11,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-021",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "姜博闻",
+      "province": "上海",
+      "school": "上海市民办华育中学",
+      "grade": "初一",
+      "award": "银牌",
+      "score": "478",
+      "eligibility": "listed",
+      "coach_names": [
+        "汪晨",
+        "许洁",
+        "高开"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "汪晨、许洁、高开",
+          "names": [
+            "汪晨",
+            "许洁",
+            "高开"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-021-image",
+          "source_location": 12,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-022",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "苟竞予",
+      "province": "重庆",
+      "school": "重庆南开（融侨）中学校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "476",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡智尧",
+        "何浪",
+        "董又铭"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡智尧、何浪、董又铭",
+          "names": [
+            "胡智尧",
+            "何浪",
+            "董又铭"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-022-image",
+          "source_location": 13,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-023",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "雷宇轩",
+      "province": "江苏",
+      "school": "江苏省苏州中学校伟长实验部",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "475",
+      "eligibility": "listed",
+      "coach_names": [
+        "石星"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "石星",
+          "names": [
+            "石星"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-023-image",
+          "source_location": 14,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-024",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "舒熙皓",
+      "province": "湖南",
+      "school": "长沙市雅礼中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "474",
+      "eligibility": "listed",
+      "coach_names": [
+        "何哲华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "何哲华",
+          "names": [
+            "何哲华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-024-image",
+          "source_location": 15,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-025",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "楼宇辰",
+      "province": "浙江",
+      "school": "绍兴市第一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "473",
+      "eligibility": "listed",
+      "coach_names": [
+        "袁荣乐",
+        "陈合力",
+        "董烨华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "袁荣乐、陈合力、董烨华",
+          "names": [
+            "袁荣乐",
+            "陈合力",
+            "董烨华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-025-image",
+          "source_location": 16,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-026",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "范斯喆",
+      "province": "浙江",
+      "school": "浙江省诸暨市海亮初级中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "473",
+      "eligibility": "listed",
+      "coach_names": [
+        "黄志刚"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "黄志刚",
+          "names": [
+            "黄志刚"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-026-image",
+          "source_location": 17,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-027",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "席芳隆",
+      "province": "北京",
+      "school": "北京大学附属中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "472",
+      "eligibility": "listed",
+      "coach_names": [
+        "肖然"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "肖然",
+          "names": [
+            "肖然"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-027-image",
+          "source_location": 18,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-028",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "赵英智",
+      "province": "山东",
+      "school": "临沂第四中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "462",
+      "eligibility": "listed",
+      "coach_names": [
+        "孟黎",
+        "赵鹏",
+        "蒋文明"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "孟黎、赵鹏、蒋文明",
+          "names": [
+            "孟黎",
+            "赵鹏",
+            "蒋文明"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-028-image",
+          "source_location": 19,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-029",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈旭磊",
+      "province": "福建",
+      "school": "福建省福州延安中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "461",
+      "eligibility": "listed",
+      "coach_names": [
+        "吴华平",
+        "林国军",
+        "程贤明"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "吴华平、林国军、程贤明",
+          "names": [
+            "吴华平",
+            "林国军",
+            "程贤明"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-029-image",
+          "source_location": 20,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-030",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "黄建恒",
+      "province": "广东",
+      "school": "广东实验中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "459",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈茂彬",
+        "陈润祥",
+        "卓培工"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈茂彬、陈润祥、卓培工",
+          "names": [
+            "陈茂彬",
+            "陈润祥",
+            "卓培工"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-030-image",
+          "source_location": 21,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-031",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "官文翔",
+      "province": "福建",
+      "school": "福建师范大学附属中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "457",
+      "eligibility": "listed",
+      "coach_names": [
+        "王可可",
+        "周成",
+        "黄丽华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王可可、周成、黄丽华",
+          "names": [
+            "王可可",
+            "周成",
+            "黄丽华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-031-image",
+          "source_location": 22,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-032",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李睿思",
+      "province": "陕西",
+      "school": "西安铁一中分校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "454",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐保毅",
+        "艾庆兴",
+        "代建杉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐保毅、艾庆兴、代建杉",
+          "names": [
+            "徐保毅",
+            "艾庆兴",
+            "代建杉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-032-image",
+          "source_location": 23,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-033",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "周泽坤",
+      "province": "山东",
+      "school": "临沂第四中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "452",
+      "eligibility": "listed",
+      "coach_names": [
+        "周科峰",
+        "李纪宝",
+        "夏宗强"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "周科峰、李纪宝、夏宗强",
+          "names": [
+            "周科峰",
+            "李纪宝",
+            "夏宗强"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-033-image",
+          "source_location": 24,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-034",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王诚俊",
+      "province": "广东",
+      "school": "广州大学附属中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "451",
+      "eligibility": "listed",
+      "coach_names": [
+        "王晓鹏",
+        "蔡子健",
+        "刘其琦"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王晓鹏、蔡子健、刘其琦",
+          "names": [
+            "王晓鹏",
+            "蔡子健",
+            "刘其琦"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-034-image",
+          "source_location": 25,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-035",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "傅九瑞",
+      "province": "北京",
+      "school": "北京师范大学附属实验中学分校",
+      "grade": "初二",
+      "award": "银牌",
+      "score": "447",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡伟栋",
+        "于保红"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡伟栋、于保红",
+          "names": [
+            "胡伟栋",
+            "于保红"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-035-image",
+          "source_location": 26,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-036",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "魏忠浩",
+      "province": "福建",
+      "school": "福建师范大学附属中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "446",
+      "eligibility": "listed",
+      "coach_names": [
+        "王可可",
+        "周成",
+        "黄丽华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王可可、周成、黄丽华",
+          "names": [
+            "王可可",
+            "周成",
+            "黄丽华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-036-image",
+          "source_location": 27,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-037",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "林祺昊",
+      "province": "福建",
+      "school": "福州时代中学",
+      "grade": "初二",
+      "award": "银牌",
+      "score": "446",
+      "eligibility": "listed",
+      "coach_names": [
+        "周成",
+        "王可可",
+        "郑玲艳"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "周成、王可可、郑玲艳",
+          "names": [
+            "周成",
+            "王可可",
+            "郑玲艳"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-037-image",
+          "source_location": 28,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-038",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李枨夏",
+      "province": "四川",
+      "school": "成都外国语学校",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "442",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈俊先",
+        "祝敏磊",
+        "张柯"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈俊先、祝敏磊、张柯",
+          "names": [
+            "陈俊先",
+            "祝敏磊",
+            "张柯"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-038-image",
+          "source_location": 29,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-039",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "曹轩鸣",
+      "province": "山东",
+      "school": "潍坊高新技术产业开发区北海学校",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "442",
+      "eligibility": "listed",
+      "coach_names": [
+        "冷学农",
+        "刘晓丽"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "冷学农、刘晓丽",
+          "names": [
+            "冷学农",
+            "刘晓丽"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-039-image",
+          "source_location": 30,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-040",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "臧业乾",
+      "province": "重庆",
+      "school": "重庆市南开中学校",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "435",
+      "eligibility": "listed",
+      "coach_names": [
+        "董又铭",
+        "何浪",
+        "张浩炜"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "董又铭、何浪、张浩炜",
+          "names": [
+            "董又铭",
+            "何浪",
+            "张浩炜"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-040-image",
+          "source_location": 31,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-041",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "余杰瑞",
+      "province": "福建",
+      "school": "福州第十二中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "434",
+      "eligibility": "listed",
+      "coach_names": [
+        "周成",
+        "王可可",
+        "郑玲艳"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "周成、王可可、郑玲艳",
+          "names": [
+            "周成",
+            "王可可",
+            "郑玲艳"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-041-image",
+          "source_location": 32,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-042",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "周裕杭",
+      "province": "北京",
+      "school": "北京师范大学附属实验中学分校",
+      "grade": "初二",
+      "award": "银牌",
+      "score": "429",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡伟栋"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡伟栋",
+          "names": [
+            "胡伟栋"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-042-image",
+          "source_location": 33,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-043",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴思成",
+      "province": "上海",
+      "school": "上海外国语大学附属外国语学校",
+      "grade": "初二",
+      "award": "银牌",
+      "score": "427",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈明",
+        "马融",
+        "葛潇"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈明、马融、葛潇",
+          "names": [
+            "陈明",
+            "马融",
+            "葛潇"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-043-image",
+          "source_location": 34,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-044",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "颜熙",
+      "province": "山东",
+      "school": "东营市胜利第一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "426",
+      "eligibility": "listed",
+      "coach_names": [
+        "刘雪",
+        "李云军",
+        "李月颖"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "刘雪、李云军、李月颖",
+          "names": [
+            "刘雪",
+            "李云军",
+            "李月颖"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-044-image",
+          "source_location": 35,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-045",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "曹子键",
+      "province": "广东",
+      "school": "中山市中山纪念中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "424",
+      "eligibility": "listed",
+      "coach_names": [
+        "宋新波",
+        "熊超",
+        "陈智敏"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "宋新波、熊超、陈智敏",
+          "names": [
+            "宋新波",
+            "熊超",
+            "陈智敏"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-045-image",
+          "source_location": 36,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-046",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杨博",
+      "province": "湖南",
+      "school": "湖南省长沙市第一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "423",
+      "eligibility": "listed",
+      "coach_names": [
+        "曹利国",
+        "袁帅",
+        "曹毅"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "曹利国、袁帅、曹毅",
+          "names": [
+            "曹利国",
+            "袁帅",
+            "曹毅"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-046-image",
+          "source_location": 37,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-047",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杨鑫和",
+      "province": "湖南",
+      "school": "长沙市长郡中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "420",
+      "eligibility": "listed",
+      "coach_names": [
+        "谭献龙"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "谭献龙",
+          "names": [
+            "谭献龙"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-047-image",
+          "source_location": 38,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-048",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "金怀恩",
+      "province": "上海",
+      "school": "上海市民办华育中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "419",
+      "eligibility": "listed",
+      "coach_names": [
+        "吴申广",
+        "毛黎莉",
+        "汪晨"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "吴申广、毛黎莉、汪晨",
+          "names": [
+            "吴申广",
+            "毛黎莉",
+            "汪晨"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-048-image",
+          "source_location": 39,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-049",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "方启航",
+      "province": "河南",
+      "school": "郑州市第一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "417",
+      "eligibility": "listed",
+      "coach_names": [
+        "刘俊星"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "刘俊星",
+          "names": [
+            "刘俊星"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-049-image",
+          "source_location": 40,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-050",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴同春",
+      "province": "广东",
+      "school": "中山市中山纪念中学",
+      "grade": "初二",
+      "award": "银牌",
+      "score": "417",
+      "eligibility": "listed",
+      "coach_names": [
+        "宋新波",
+        "熊超",
+        "黄细光"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "宋新波、熊超、黄细光",
+          "names": [
+            "宋新波",
+            "熊超",
+            "黄细光"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-050-image",
+          "source_location": 41,
+          "image_sha256": "d2f822a502e10b8c6f454065876aac65004ce6434688fa0e2db40706d19c9661",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-051",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "游一诺",
+      "province": "广东",
+      "school": "佛山市南海区石门中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "415",
+      "eligibility": "listed",
+      "coach_names": [
+        "梁冠健",
+        "周小成"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "梁冠健、周小成",
+          "names": [
+            "梁冠健",
+            "周小成"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-051-image",
+          "source_location": 1,
+          "image_sha256": "68295b2c0fd52001814916b93e286901379165f7d54c6091fe1db6cba0eb844b",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-052",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "郑杞珩",
+      "province": "浙江",
+      "school": "浙江金华第一中学",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "410",
+      "eligibility": "listed",
+      "coach_names": [
+        "毛丹怡"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "毛丹怡",
+          "names": [
+            "毛丹怡"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-052-image",
+          "source_location": 2,
+          "image_sha256": "68295b2c0fd52001814916b93e286901379165f7d54c6091fe1db6cba0eb844b",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-053",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "成子谦",
+      "province": "山东",
+      "school": "济南新航实验外国语学校",
+      "grade": "初二",
+      "award": "银牌",
+      "score": "410",
+      "eligibility": "listed",
+      "coach_names": [
+        "张晓庆",
+        "李想",
+        "张元霞"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张晓庆、李想、张元霞",
+          "names": [
+            "张晓庆",
+            "李想",
+            "张元霞"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-053-image",
+          "source_location": 3,
+          "image_sha256": "68295b2c0fd52001814916b93e286901379165f7d54c6091fe1db6cba0eb844b",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-054",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "田琢粲",
+      "province": "天津",
+      "school": "天津英华实验学校",
+      "grade": "高一",
+      "award": "银牌",
+      "score": "408",
+      "eligibility": "listed",
+      "coach_names": [
+        "张海峰",
+        "陈月英"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张海峰、陈月英",
+          "names": [
+            "张海峰",
+            "陈月英"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-054-image",
+          "source_location": 4,
+          "image_sha256": "68295b2c0fd52001814916b93e286901379165f7d54c6091fe1db6cba0eb844b",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-055",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴润泽",
+      "province": "北京",
+      "school": "首都师范大学附属中学",
+      "grade": "初三",
+      "award": "银牌",
+      "score": "407",
+      "eligibility": "listed",
+      "coach_names": [
+        "杨森林",
+        "高一轩",
+        "詹世辉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-silver",
+        "archive-noi2023-silver-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "杨森林、高一轩、詹世辉",
+          "names": [
+            "杨森林",
+            "高一轩",
+            "詹世辉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-silver-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-055-image",
+          "source_location": 5,
+          "image_sha256": "68295b2c0fd52001814916b93e286901379165f7d54c6091fe1db6cba0eb844b",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-056",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吕若尘",
+      "province": "陕西",
+      "school": "西北工业大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "406",
+      "eligibility": "listed",
+      "coach_names": [
+        "刘利丽"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "刘利丽",
+          "names": [
+            "刘利丽"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-056-image",
+          "source_location": 1,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-057",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈逸轩",
+      "province": "北京",
+      "school": "首都师范大学附属中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "406",
+      "eligibility": "listed",
+      "coach_names": [
+        "杨森林",
+        "高一轩",
+        "詹世辉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "杨森林、高一轩、詹世辉",
+          "names": [
+            "杨森林",
+            "高一轩",
+            "詹世辉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-057-image",
+          "source_location": 2,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-058",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴子涵",
+      "province": "江西",
+      "school": "江西科技学院附属中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "401",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡志文"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡志文",
+          "names": [
+            "胡志文"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-058-image",
+          "source_location": 3,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-059",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "刘玉琢",
+      "province": "湖北",
+      "school": "武汉外国语学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "401",
+      "eligibility": "listed",
+      "coach_names": [
+        "李吴松",
+        "纪磊"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "李吴松、纪磊",
+          "names": [
+            "李吴松",
+            "纪磊"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-059-image",
+          "source_location": 4,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-060",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "林诚凯",
+      "province": "福建",
+      "school": "福建省南安第一中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "401",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈建春"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈建春",
+          "names": [
+            "陈建春"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-060-image",
+          "source_location": 5,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-061",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "叶昱圻",
+      "province": "广东",
+      "school": "华南师范大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "399",
+      "eligibility": "listed",
+      "coach_names": [
+        "梁泽贤",
+        "杜嘉华",
+        "徐晨皓"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "梁泽贤、杜嘉华、徐晨皓",
+          "names": [
+            "梁泽贤",
+            "杜嘉华",
+            "徐晨皓"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-061-image",
+          "source_location": 6,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-062",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "胡梓康",
+      "province": "湖南",
+      "school": "长沙市雅礼中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "397",
+      "eligibility": "listed",
+      "coach_names": [
+        "何哲华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "何哲华",
+          "names": [
+            "何哲华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-062-image",
+          "source_location": 7,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-063",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "蔡钟渔",
+      "province": "广东",
+      "school": "广州市第二中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "396",
+      "eligibility": "listed",
+      "coach_names": [
+        "林盛华",
+        "张海强"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "林盛华、张海强",
+          "names": [
+            "林盛华",
+            "张海强"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-063-image",
+          "source_location": 8,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-064",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈叶铭",
+      "province": "福建",
+      "school": "福州时代中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "395",
+      "eligibility": "listed",
+      "coach_names": [
+        "周成",
+        "王可可",
+        "郑玲艳"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "周成、王可可、郑玲艳",
+          "names": [
+            "周成",
+            "王可可",
+            "郑玲艳"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-064-image",
+          "source_location": 9,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-065",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "施轩杰",
+      "province": "福建",
+      "school": "福建省厦门市蔡塘学校",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "394",
+      "eligibility": "listed",
+      "coach_names": [
+        "曾艺卿"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "曾艺卿",
+          "names": [
+            "曾艺卿"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-065-image",
+          "source_location": 10,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-066",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李天呈",
+      "province": "安徽",
+      "school": "安徽师范大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "393",
+      "eligibility": "listed",
+      "coach_names": [
+        "叶国平",
+        "陈庆"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "叶国平、陈庆",
+          "names": [
+            "叶国平",
+            "陈庆"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-066-image",
+          "source_location": 11,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-067",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "许钊闻",
+      "province": "福建",
+      "school": "福州现代中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "388",
+      "eligibility": "listed",
+      "coach_names": [
+        "林国军"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "林国军",
+          "names": [
+            "林国军"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-067-image",
+          "source_location": 12,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-068",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "韩书简",
+      "province": "上海",
+      "school": "上海市民办华育中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "387",
+      "eligibility": "listed",
+      "coach_names": [
+        "汪晨",
+        "许洁",
+        "高开"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "汪晨、许洁、高开",
+          "names": [
+            "汪晨",
+            "许洁",
+            "高开"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-068-image",
+          "source_location": 13,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-069",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "姚奕",
+      "province": "江苏",
+      "school": "江苏省常州高级中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "387",
+      "eligibility": "listed",
+      "coach_names": [
+        "曹文"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "曹文",
+          "names": [
+            "曹文"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-069-image",
+          "source_location": 14,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-070",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "龙漾飞",
+      "province": "江西",
+      "school": "江西省赣州市厚德外国语学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "385",
+      "eligibility": "listed",
+      "coach_names": [
+        "范才坤"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "范才坤",
+          "names": [
+            "范才坤"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-070-image",
+          "source_location": 15,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-071",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杨梓尧",
+      "province": "陕西",
+      "school": "西安铁一中分校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "384",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐保毅",
+        "艾庆兴",
+        "代建杉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐保毅、艾庆兴、代建杉",
+          "names": [
+            "徐保毅",
+            "艾庆兴",
+            "代建杉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-071-image",
+          "source_location": 16,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-072",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "郭子阳",
+      "province": "黑龙江",
+      "school": "哈尔滨市第三十六中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "381",
+      "eligibility": "listed",
+      "coach_names": [
+        "于纪明"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "于纪明",
+          "names": [
+            "于纪明"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-072-image",
+          "source_location": 17,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-073",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "戴思杰",
+      "province": "江苏",
+      "school": "江苏省泰兴中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "380",
+      "eligibility": "listed",
+      "coach_names": [
+        "戴亚平"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "戴亚平",
+          "names": [
+            "戴亚平"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-073-image",
+          "source_location": 18,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-074",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "左佑",
+      "province": "上海",
+      "school": "华东师范大学第二附属中学附属初级中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "379",
+      "eligibility": "listed",
+      "coach_names": [
+        "郭威"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "郭威",
+          "names": [
+            "郭威"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-074-image",
+          "source_location": 19,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-075",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "何陈力",
+      "province": "福建",
+      "school": "福建省福州第十八中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "379",
+      "eligibility": "listed",
+      "coach_names": [
+        "黄晓燕",
+        "陈松花"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "黄晓燕、陈松花",
+          "names": [
+            "黄晓燕",
+            "陈松花"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-075-image",
+          "source_location": 20,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-076",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "何钒佑",
+      "province": "四川",
+      "school": "成都外国语学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "376",
+      "eligibility": "listed",
+      "coach_names": [
+        "喻鹏举",
+        "祝敏磊",
+        "陈俊先"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "喻鹏举、祝敏磊、陈俊先",
+          "names": [
+            "喻鹏举",
+            "祝敏磊",
+            "陈俊先"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-076-image",
+          "source_location": 21,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-077",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "华恒逸",
+      "province": "河北",
+      "school": "石家庄市第二中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "375",
+      "eligibility": "listed",
+      "coach_names": [
+        "王凯",
+        "李晶",
+        "薄瑞明"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王凯、李晶、薄瑞明",
+          "names": [
+            "王凯",
+            "李晶",
+            "薄瑞明"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-077-image",
+          "source_location": 22,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-078",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李宇瀚",
+      "province": "湖北",
+      "school": "华中师范大学第一附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "372",
+      "eligibility": "listed",
+      "coach_names": [
+        "马亮",
+        "向期中"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "马亮、向期中",
+          "names": [
+            "马亮",
+            "向期中"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-078-image",
+          "source_location": 23,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-079",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "周雨衡",
+      "province": "湖南",
+      "school": "长沙市湘郡培粹实验中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "371",
+      "eligibility": "listed",
+      "coach_names": [
+        "谢秋锋"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "谢秋锋",
+          "names": [
+            "谢秋锋"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-079-image",
+          "source_location": 24,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-080",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "蔡骐羽",
+      "province": "北京",
+      "school": "清华大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "371",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐岩"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐岩",
+          "names": [
+            "徐岩"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-080-image",
+          "source_location": 25,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-081",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴秋实",
+      "province": "四川",
+      "school": "成都外国语学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "366",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈俊先",
+        "祝敏磊",
+        "喻鹏举"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈俊先、祝敏磊、喻鹏举",
+          "names": [
+            "陈俊先",
+            "祝敏磊",
+            "喻鹏举"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-081-image",
+          "source_location": 26,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-082",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "袁帅",
+      "province": "山东",
+      "school": "烟台青华中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "363",
+      "eligibility": "listed",
+      "coach_names": [
+        "姜涛",
+        "戴伯兮"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "姜涛、戴伯兮",
+          "names": [
+            "姜涛",
+            "戴伯兮"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-082-image",
+          "source_location": 27,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-083",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "赖浩宸",
+      "province": "广东",
+      "school": "深圳中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "362",
+      "eligibility": "listed",
+      "coach_names": [
+        "曾炜杰"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "曾炜杰",
+          "names": [
+            "曾炜杰"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-083-image",
+          "source_location": 28,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-084",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "张嘉麒",
+      "province": "北京",
+      "school": "北京市第十二中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "361",
+      "eligibility": "listed",
+      "coach_names": [
+        "任赟"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "任赟",
+          "names": [
+            "任赟"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-084-image",
+          "source_location": 29,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-085",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王翼天",
+      "province": "陕西",
+      "school": "西北工业大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "360",
+      "eligibility": "listed",
+      "coach_names": [
+        "刘利丽"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "刘利丽",
+          "names": [
+            "刘利丽"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-085-image",
+          "source_location": 30,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-086",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "黄奕涵",
+      "province": "四川",
+      "school": "天府第七中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "360",
+      "eligibility": "listed",
+      "coach_names": [
+        "郭宇",
+        "陈丽竹",
+        "邓伟"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "郭宇、陈丽竹、邓伟",
+          "names": [
+            "郭宇",
+            "陈丽竹",
+            "邓伟"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-086-image",
+          "source_location": 31,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-087",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王子铭",
+      "province": "山东",
+      "school": "山东省聊城第一中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "359",
+      "eligibility": "listed",
+      "coach_names": [
+        "赵修彬"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "赵修彬",
+          "names": [
+            "赵修彬"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-087-image",
+          "source_location": 32,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-088",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杨子鉴",
+      "province": "湖南",
+      "school": "湖南省长沙市第一中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "359",
+      "eligibility": "listed",
+      "coach_names": [
+        "曹利国",
+        "袁帅",
+        "曹毅"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "曹利国、袁帅、曹毅",
+          "names": [
+            "曹利国",
+            "袁帅",
+            "曹毅"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-088-image",
+          "source_location": 33,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-089",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "熊晟亮",
+      "province": "湖南",
+      "school": "长沙市长郡中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "359",
+      "eligibility": "listed",
+      "coach_names": [
+        "谭献龙"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "谭献龙",
+          "names": [
+            "谭献龙"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-089-image",
+          "source_location": 34,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-090",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "肖涵",
+      "province": "湖南",
+      "school": "长沙市中雅培粹学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "359",
+      "eligibility": "listed",
+      "coach_names": [
+        "屈运华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "屈运华",
+          "names": [
+            "屈运华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-090-image",
+          "source_location": 35,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-091",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "蔡睿诚",
+      "province": "福建",
+      "school": "福建省福州第三中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "357",
+      "eligibility": "listed",
+      "coach_names": [
+        "宋立林"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "宋立林",
+          "names": [
+            "宋立林"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-091-image",
+          "source_location": 36,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-092",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李响",
+      "province": "江苏",
+      "school": "南京外国语学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "356",
+      "eligibility": "listed",
+      "coach_names": [
+        "张超",
+        "曹蓉",
+        "李曙"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张超、曹蓉、李曙",
+          "names": [
+            "张超",
+            "曹蓉",
+            "李曙"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-092-image",
+          "source_location": 37,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-093",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杨景皓",
+      "province": "山东",
+      "school": "山东省青岛第二中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "355",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡芳",
+        "李岩",
+        "朱彬"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡芳、李岩、朱彬",
+          "names": [
+            "胡芳",
+            "李岩",
+            "朱彬"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-093-image",
+          "source_location": 38,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-094",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "周漠曦轩",
+      "province": "江苏",
+      "school": "江苏省锡山高级中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "355",
+      "eligibility": "listed",
+      "coach_names": [
+        "郑兴航"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "郑兴航",
+          "names": [
+            "郑兴航"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-094-image",
+          "source_location": 39,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-095",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "程楷轩",
+      "province": "湖南",
+      "school": "长沙市湘郡培粹实验中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "353",
+      "eligibility": "listed",
+      "coach_names": [
+        "谢秋锋"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "谢秋锋",
+          "names": [
+            "谢秋锋"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-095-image",
+          "source_location": 40,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-096",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "吴童",
+      "province": "安徽",
+      "school": "安徽师范大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "353",
+      "eligibility": "listed",
+      "coach_names": [
+        "叶国平",
+        "陈庆"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-0"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "叶国平、陈庆",
+          "names": [
+            "叶国平",
+            "陈庆"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-0",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-096-image",
+          "source_location": 41,
+          "image_sha256": "180e7b9c4cd0bd7ca7670501b5cfe555ef9ae9fb646fcde63e032df2cfbd4260",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-097",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "董斯涵",
+      "province": "北京",
+      "school": "北京市十一学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "352",
+      "eligibility": "listed",
+      "coach_names": [
+        "汪星明",
+        "张炜其"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "汪星明、张炜其",
+          "names": [
+            "汪星明",
+            "张炜其"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-097-image",
+          "source_location": 1,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-098",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李劭鸿",
+      "province": "甘肃",
+      "school": "兰州树人中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "349",
+      "eligibility": "listed",
+      "coach_names": [
+        "张殊亮"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张殊亮",
+          "names": [
+            "张殊亮"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-098-image",
+          "source_location": 2,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-099",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "刘子涵",
+      "province": "吉林",
+      "school": "长春东师附中青华学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "346",
+      "eligibility": "listed",
+      "coach_names": [
+        "王昌平",
+        "孔维玲",
+        "王晓光"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王昌平、孔维玲、王晓光",
+          "names": [
+            "王昌平",
+            "孔维玲",
+            "王晓光"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-099-image",
+          "source_location": 3,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-100",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "林毅",
+      "province": "山东",
+      "school": "山东省烟台第二中学",
+      "grade": "初四",
+      "award": "铜牌",
+      "score": "345",
+      "eligibility": "listed",
+      "coach_names": [
+        "姜仕华",
+        "陈珍珍",
+        "孙巧玉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "姜仕华、陈珍珍、孙巧玉",
+          "names": [
+            "姜仕华",
+            "陈珍珍",
+            "孙巧玉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-100-image",
+          "source_location": 4,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-101",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "师小川",
+      "province": "湖北",
+      "school": "华中师范大学第一附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "345",
+      "eligibility": "listed",
+      "coach_names": [
+        "马亮",
+        "向期中"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "马亮、向期中",
+          "names": [
+            "马亮",
+            "向期中"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-101-image",
+          "source_location": 5,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-102",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "许智彬",
+      "province": "北京",
+      "school": "清华大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "345",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐岩"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐岩",
+          "names": [
+            "徐岩"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-102-image",
+          "source_location": 6,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-103",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "张昊洋",
+      "province": "黑龙江",
+      "school": "哈尔滨工业大学附属中学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "344",
+      "eligibility": "listed",
+      "coach_names": [
+        "朱逢迁"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1",
+        "ea3f842b640b738900e996c9"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "朱逢迁",
+          "names": [
+            "朱逢迁"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-103-image",
+          "source_location": 7,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。 朱逢迁、刘斓乾字形参照同年同校官方教师名单核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-104",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "倪润东",
+      "province": "山东",
+      "school": "山东省青岛第二中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "343",
+      "eligibility": "listed",
+      "coach_names": [
+        "胡芳",
+        "李岩",
+        "胡传畅"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "胡芳、李岩、胡传畅",
+          "names": [
+            "胡芳",
+            "李岩",
+            "胡传畅"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-104-image",
+          "source_location": 8,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-105",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "郝心悦",
+      "province": "天津",
+      "school": "天津市南开中学滨海生态城学校",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "340",
+      "eligibility": "listed",
+      "coach_names": [
+        "李敏",
+        "刘小会"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "李敏、刘小会",
+          "names": [
+            "李敏",
+            "刘小会"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-105-image",
+          "source_location": 9,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-106",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "朱珈良",
+      "province": "河北",
+      "school": "衡水中学实验学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "340",
+      "eligibility": "listed",
+      "coach_names": [
+        "吕红波",
+        "朱文虎",
+        "谷晓飞"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "吕红波、朱文虎、谷晓飞",
+          "names": [
+            "吕红波",
+            "朱文虎",
+            "谷晓飞"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-106-image",
+          "source_location": 10,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-107",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "骆雨霄",
+      "province": "山东",
+      "school": "山东省青岛第三十九中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "335",
+      "eligibility": "listed",
+      "coach_names": [
+        "栾吉梅",
+        "许慧"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "栾吉梅、许慧",
+          "names": [
+            "栾吉梅",
+            "许慧"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-107-image",
+          "source_location": 11,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-108",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "潘世钊",
+      "province": "浙江",
+      "school": "绍兴市第一中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "333",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈合力",
+        "董烨华",
+        "翁天东"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈合力、董烨华、翁天东",
+          "names": [
+            "陈合力",
+            "董烨华",
+            "翁天东"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-108-image",
+          "source_location": 12,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-109",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "丁思天",
+      "province": "上海",
+      "school": "上海市上海中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "333",
+      "eligibility": "listed",
+      "coach_names": [
+        "毛黎莉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "毛黎莉",
+          "names": [
+            "毛黎莉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-109-image",
+          "source_location": 13,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-110",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "徐懿凡",
+      "province": "黑龙江",
+      "school": "哈尔滨师范大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "331",
+      "eligibility": "listed",
+      "coach_names": [
+        "于纪明",
+        "朱逢迁"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1",
+        "ea3f842b640b738900e996c9"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "于纪明、朱逢迁",
+          "names": [
+            "于纪明",
+            "朱逢迁"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-110-image",
+          "source_location": 14,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。 朱逢迁、刘斓乾字形参照同年同校官方教师名单核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-111",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王子衿",
+      "province": "天津",
+      "school": "天津市五十五中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "331",
+      "eligibility": "listed",
+      "coach_names": [
+        "王金宏"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王金宏",
+          "names": [
+            "王金宏"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-111-image",
+          "source_location": 15,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-112",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "李思彤",
+      "province": "吉林",
+      "school": "东北师大附中明珠学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "328",
+      "eligibility": "listed",
+      "coach_names": [
+        "任雪亮"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "任雪亮",
+          "names": [
+            "任雪亮"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-112-image",
+          "source_location": 16,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-113",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王稼兴",
+      "province": "陕西",
+      "school": "西安铁一中分校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "326",
+      "eligibility": "listed",
+      "coach_names": [
+        "徐保毅",
+        "艾庆兴",
+        "代建杉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "徐保毅、艾庆兴、代建杉",
+          "names": [
+            "徐保毅",
+            "艾庆兴",
+            "代建杉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-113-image",
+          "source_location": 17,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-114",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "张大猷",
+      "province": "福建",
+      "school": "福建师范大学附属中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "325",
+      "eligibility": "listed",
+      "coach_names": [
+        "王可可",
+        "周成",
+        "黄丽华"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王可可、周成、黄丽华",
+          "names": [
+            "王可可",
+            "周成",
+            "黄丽华"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-114-image",
+          "source_location": 18,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-115",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王屹峰",
+      "province": "山西",
+      "school": "太原市第五中学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "321",
+      "eligibility": "listed",
+      "coach_names": [
+        "陈真",
+        "孟繁舒",
+        "皇甫睿"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "陈真、孟繁舒、皇甫睿",
+          "names": [
+            "陈真",
+            "孟繁舒",
+            "皇甫睿"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-115-image",
+          "source_location": 19,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-116",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "黄文博",
+      "province": "湖北",
+      "school": "武汉市武钢三中",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "321",
+      "eligibility": "listed",
+      "coach_names": [
+        "吴金全"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "吴金全",
+          "names": [
+            "吴金全"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-116-image",
+          "source_location": 20,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-117",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈卿博睿",
+      "province": "湖北",
+      "school": "武汉二中广雅中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "320",
+      "eligibility": "listed",
+      "coach_names": [
+        "李吴松"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "李吴松",
+          "names": [
+            "李吴松"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-117-image",
+          "source_location": 21,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-118",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "张轶哲",
+      "province": "辽宁",
+      "school": "大连市第二十四中学金普学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "317",
+      "eligibility": "listed",
+      "coach_names": [
+        "李成博"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "李成博",
+          "names": [
+            "李成博"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-118-image",
+          "source_location": 22,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-119",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "金继烨",
+      "province": "吉林",
+      "school": "长春东师附中青华学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "317",
+      "eligibility": "listed",
+      "coach_names": [
+        "王昌平",
+        "孔维玲",
+        "王晓光"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "王昌平、孔维玲、王晓光",
+          "names": [
+            "王昌平",
+            "孔维玲",
+            "王晓光"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-119-image",
+          "source_location": 23,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-120",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "戈卿辉",
+      "province": "上海",
+      "school": "上海外国语大学附属浦东外国语学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "314",
+      "eligibility": "listed",
+      "coach_names": [
+        "顾晓琛"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "顾晓琛",
+          "names": [
+            "顾晓琛"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-120-image",
+          "source_location": 24,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-121",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "杨銉汐",
+      "province": "辽宁",
+      "school": "东北育才学校",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "308",
+      "eligibility": "listed",
+      "coach_names": [
+        "邱桂香"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "邱桂香",
+          "names": [
+            "邱桂香"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-121-image",
+          "source_location": 25,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-122",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "司梓翰",
+      "province": "山东",
+      "school": "淄博实验中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "304",
+      "eligibility": "listed",
+      "coach_names": [
+        "崔国亮"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "崔国亮",
+          "names": [
+            "崔国亮"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-122-image",
+          "source_location": 26,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-123",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王玺植",
+      "province": "辽宁",
+      "school": "大连市第二十四中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "290",
+      "eligibility": "listed",
+      "coach_names": [
+        "张新钢"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "张新钢",
+          "names": [
+            "张新钢"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-123-image",
+          "source_location": 27,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-124",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "于行健",
+      "province": "辽宁",
+      "school": "东北育才双语学校",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "289",
+      "eligibility": "listed",
+      "coach_names": [
+        "邱桂香"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "邱桂香",
+          "names": [
+            "邱桂香"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-124-image",
+          "source_location": 28,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-125",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "王梓丞",
+      "province": "北京",
+      "school": "中国人民大学附属中学",
+      "grade": "初二",
+      "award": "铜牌",
+      "score": "287",
+      "eligibility": "listed",
+      "coach_names": [
+        "梁霄"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "梁霄",
+          "names": [
+            "梁霄"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-125-image",
+          "source_location": 29,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-126",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "任宇航",
+      "province": "吉林",
+      "school": "长春市十一高中",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "282",
+      "eligibility": "listed",
+      "coach_names": [
+        "韩冰"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "韩冰",
+          "names": [
+            "韩冰"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-126-image",
+          "source_location": 30,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-127",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "陈奕珲",
+      "province": "上海",
+      "school": "上海市上海中学",
+      "grade": "高一",
+      "award": "铜牌",
+      "score": "280",
+      "eligibility": "listed",
+      "coach_names": [
+        "毛黎莉"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "毛黎莉",
+          "names": [
+            "毛黎莉"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-127-image",
+          "source_location": 31,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。"
+        }
+      ]
+    },
+    {
+      "result_id": "archive-noi2023-summer-128",
+      "event": "NOI",
+      "year": 2023,
+      "variant": "invitational",
+      "group": "",
+      "student": "赵思翰",
+      "province": "吉林",
+      "school": "吉林大学附属中学",
+      "grade": "初三",
+      "award": "铜牌",
+      "score": "280",
+      "eligibility": "listed",
+      "coach_names": [
+        "刘斓乾",
+        "王汉实",
+        "李丹"
+      ],
+      "coach_status": "parsed",
+      "source_ids": [
+        "archive-noi2023-bronze",
+        "archive-noi2023-bronze-image-1",
+        "ea3f842b640b738900e996c9"
+      ],
+      "coach_evidence": [
+        {
+          "raw": "刘斓乾、王汉实、李丹",
+          "names": [
+            "刘斓乾",
+            "王汉实",
+            "李丹"
+          ],
+          "unresolved": [],
+          "source_id": "archive-noi2023-bronze-image-1",
+          "source_type": "community_repost",
+          "observation_id": "archive-noi2023-summer-128-image",
+          "source_location": 32,
+          "image_sha256": "882be54237c2a658ec2f57bd0cce249f4fe7d130f7a69f9951e9f2358dec450a",
+          "transcription_note": "名单图片教师列逐行转录；姓名、省份、年级与成绩按固定上游名单交叉核对。 朱逢迁、刘斓乾字形参照同年同校官方教师名单核对。"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "archive-noi2023-gold",
+      "url": "https://www.zizzs.com/c/202307/115929.html",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-gold-image-0",
+      "url": "https://cdn.zizzs.com/zixunzhan/202310/86d5ecc6-a43f-40c4-9c33-97f2b030c776.png",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-silver",
+      "url": "https://www.zizzs.com/c/202307/115930.html",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-silver-image-0",
+      "url": "https://cdn.zizzs.com/zixunzhan/202310/ee6f3ec5-465a-450d-bda3-cb9d24a992bc.png",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-silver-image-1",
+      "url": "https://cdn.zizzs.com/zixunzhan/202310/878a76b7-6d27-4c43-9f6f-a6b6530d3fe6.png",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-bronze",
+      "url": "https://www.zizzs.com/c/202307/115931.html",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-bronze-image-0",
+      "url": "https://cdn.zizzs.com/zixunzhan/202310/b6a375f9-9c21-44e5-931f-57bc7dffd9b6.png",
+      "type": "community_repost"
+    },
+    {
+      "id": "archive-noi2023-bronze-image-1",
+      "url": "https://cdn.zizzs.com/zixunzhan/202310/9d21868c-04b2-478a-aaed-ed30c2201ec9.png",
+      "type": "community_repost"
+    }
+  ]
+}
