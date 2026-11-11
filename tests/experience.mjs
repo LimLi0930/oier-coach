@@ -436,6 +436,46 @@ try {
   for (const name of ["曹蓉", "张超", "于露"])
     await expect(xuIoi.getByRole("link", { name, exact: true })).toBeVisible();
 
+  // Empty search is one screen; filtering restores ordinary document scrolling.
+  for (const [width, height] of [
+    [1440, 900],
+    [1440, 768],
+    [1134, 783],
+    [1280, 600],
+    [768, 700],
+    [390, 844],
+    [390, 667],
+    [375, 568],
+    [844, 390],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.goto(origin);
+    await expect(page.locator(".search-start")).toBeVisible();
+    assert.equal(
+      await page.evaluate(() => document.documentElement.scrollHeight),
+      height,
+    );
+    await page.mouse.move(width / 2, height / 2);
+    await page.mouse.wheel(0, 500);
+    assert.equal(await page.evaluate(() => scrollY), 0);
+    await page.getByLabel("姓名或拼音首字母").fill("黄");
+    await expect(page.locator(".person-card")).toHaveCount(30);
+    assert.ok(
+      await page.evaluate(
+        () => document.documentElement.scrollHeight > innerHeight,
+      ),
+    );
+    await page.evaluate(() => window.scrollTo(0, 500));
+    assert.ok(await page.evaluate(() => scrollY > 0));
+    await page.getByRole("button", { name: "清空筛选", exact: true }).click();
+    await expect(page.locator(".search-start")).toBeVisible();
+    assert.equal(
+      await page.evaluate(() => document.documentElement.scrollHeight),
+      height,
+    );
+    assert.equal(await page.evaluate(() => scrollY), 0);
+  }
+
   // Real touch targets for the province filter and phone sheet.
   const touchContext = await browser.newContext({
     viewport: { width: 390, height: 844 },
