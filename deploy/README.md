@@ -1,5 +1,7 @@
 # Linux 自有服务器部署
 
+生产站点为 [oier.kdtree.xyz](https://oier.kdtree.xyz)，运行于 Ubuntu 24.04 LTS，使用 Nginx 和 Let’s Encrypt HTTPS。Cloudflare 管理域名 DNS。
+
 将域名解析到服务器，并准备 Nginx 与 HTTPS 证书。默认站点目录为 `/srv/oier-coach`，可通过 `SITE_ROOT` 指定专用绝对路径。
 
 ## 发布目录
@@ -31,6 +33,10 @@ sudo install -m 644 /tmp/oier-coach.conf /etc/nginx/conf.d/oier-coach.conf
 sudo nginx -t
 sudo systemctl reload nginx
 ```
+
+生产服务器通过 `certbot certonly --webroot -w /var/www/letsencrypt -d oier.kdtree.xyz` 签发证书，保留 HTTP 的 `/.well-known/acme-challenge/` 路径用于验证，其他 HTTP 请求跳转到 HTTPS。`certbot.timer` 负责自动续期，`/etc/letsencrypt/renewal-hooks/deploy/reload-nginx.sh` 在证书更新后重载 Nginx。首次签发前需先启用只包含 HTTP 的验证站点。
+
+学生、教练索引及年度榜可在发布前生成同名 `.json.gz`，模板通过 `gzip_static` 优先发送预压缩文件，其他文本响应使用动态 gzip。文件发布与证书签发后运行 `nginx -t`，并通过 `certbot renew --dry-run` 验证续期。
 
 模板让教练详情深链回退到 `index.html`。数据清单与 HTML 每次重新验证，版本数据和哈希资源可长期缓存。JSON 文件不存在时返回 404，前端显示可重试的错误状态。
 

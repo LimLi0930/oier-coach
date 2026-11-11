@@ -2,6 +2,8 @@
 
 从公开竞赛成绩出发，查找选手与教练，了解他们的指导关系与历年表现。
 
+[访问网站](https://oier.kdtree.xyz) · [教练榜](https://oier.kdtree.xyz/rankings/coaches) · [学生榜](https://oier.kdtree.xyz/rankings/students)
+
 OIer Coach 面向 OI 学生、教练和爱好者，提供教练榜、学生榜与可相互跳转的人物档案。项目基于 OIerDB 数据和公开比赛名单，保留资料出处，欢迎大家一起补充与修订。
 
 ## 你可以在这里做什么
