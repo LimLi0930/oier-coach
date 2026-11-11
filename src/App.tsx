@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
-import { useResource } from "./data";
+import { Github } from "lucide-react";
+import { repositoryUrl, useResource } from "./data";
 import type { Manifest } from "./types";
 import { External, LoadState, NotFound } from "./components/ui";
 import SearchPage from "./pages/SearchPage";
@@ -97,6 +98,18 @@ export default function App() {
           </Link>
           <div className="header-actions">
             <MainNavigation />
+            {repositoryUrl && (
+              <a
+                className="github-nav"
+                href={repositoryUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub 项目仓库"
+                title="GitHub 项目仓库"
+              >
+                <Github size={19} aria-hidden="true" />
+              </a>
+            )}
             <ThemeSwitch />
           </div>
         </div>
@@ -158,6 +171,9 @@ export default function App() {
               <div className="footer-links">
                 <Link to="/rules">计分规则</Link>
                 <Link to="/contribute">参与修订</Link>
+                {repositoryUrl && (
+                  <External href={repositoryUrl}>GitHub 源码</External>
+                )}
                 <External href="https://oier.baoshuo.dev/">OIerDB</External>
               </div>
             </footer>

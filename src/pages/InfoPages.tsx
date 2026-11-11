@@ -98,6 +98,28 @@ export function ContributePage() {
         </div>
       </div>
       <section className="surface prose">
+        <h2>项目已在 GitHub 开源</h2>
+        <p>
+          OIer Coach
+          将公开比赛成绩与师生指导关系整理成可检索的档案。你可以查看计分实现、提出使用建议，或和我们一起补全缺失资料。如果项目对你有帮助，欢迎在
+          GitHub 点一颗 Star。
+        </p>
+        {repositoryUrl && (
+          <div className="community-links">
+            <External className="button primary" href={repositoryUrl}>
+              查看项目与 Star
+            </External>
+            <External className="button" href={`${repositoryUrl}/issues/new`}>
+              反馈问题
+            </External>
+            <External
+              className="button"
+              href={`${repositoryUrl}/blob/main/CONTRIBUTING.md`}
+            >
+              贡献指南
+            </External>
+          </div>
+        )}
         <h2>补充与修订资料</h2>
         <p>
           可以补充姓名与拼音、学生身份、指导学年，以及具体比赛的教练归属。请提供公开名单或学校报道的链接，并说明修改原因。

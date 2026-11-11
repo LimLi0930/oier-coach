@@ -1,11 +1,18 @@
 import { PersonLink } from "../components/PersonPreview";
 import { useEffect, useMemo, useState } from "react";
 import { Link, Navigate, useSearchParams } from "react-router-dom";
-import { ArrowRight, Search, X } from "lucide-react";
-import { formatInteger, formatScore, rankText, useResource } from "../data";
+import { ArrowRight, Github, Search, X } from "lucide-react";
+import {
+  formatInteger,
+  formatScore,
+  rankText,
+  repositoryUrl,
+  useResource,
+} from "../data";
 import type { Entity, Manifest, RankedPerson } from "../types";
 import {
   Avatar,
+  External,
   LoadState,
   Pagination,
   personPath,
@@ -168,6 +175,18 @@ export default function SearchPage({ manifest }: { manifest: Manifest }) {
                 <ArrowRight size={15} />
               </Link>
             </div>
+            {repositoryUrl && (
+              <section className="open-source-note" aria-label="开源项目">
+                <h2>一起完善信奥的师生档案</h2>
+                <p>
+                  OIer Coach 已在 GitHub 开源。欢迎提交资料、反馈问题，也欢迎
+                  Star 支持项目。
+                </p>
+                <External href={repositoryUrl}>
+                  <Github size={17} aria-hidden="true" />在 GitHub 上查看项目
+                </External>
+              </section>
+            )}
           </div>
         )}
       </section>

@@ -112,6 +112,23 @@ try {
   ).toBeVisible();
   await expect(page.locator(".person-card")).toHaveCount(0);
   await expect(page.locator(".coach-row")).toHaveCount(0);
+  if (await page.locator(".github-nav").count()) {
+    const repository = await page.locator(".github-nav").getAttribute("href");
+    assert.match(repository, /^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/);
+    await expect(page.locator(".github-nav")).toHaveAttribute(
+      "target",
+      "_blank",
+    );
+    await expect(page.locator(".open-source-note")).toContainText("Star");
+    await expect(page.locator(".open-source-note a")).toHaveAttribute(
+      "href",
+      repository,
+    );
+    await expect(
+      page.locator(".footer-links").getByRole("link", { name: "GitHub 源码" }),
+    ).toHaveAttribute("href", repository);
+  }
+
   await alignedNavigation();
   const motion = await page.locator("nav").evaluate(async (nav) => {
     nav.querySelector('a[href="/rankings/students"]').click();

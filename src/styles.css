@@ -2920,3 +2920,76 @@ main {
 .card-retreating .preview-body::-webkit-scrollbar {
   display: none;
 }
+
+.github-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  color: var(--muted);
+  border-radius: 6px;
+}
+.github-nav:hover {
+  color: var(--text);
+  background: var(--selected);
+}
+.open-source-note {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.open-source-note h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.search-start .open-source-note p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+.open-source-note > a {
+  margin-top: 12px;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.community-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 28px;
+}
+.community-links .button {
+  min-height: 44px;
+}
+@media (max-width: 640px) {
+  .header-actions {
+    gap: 0;
+  }
+  .nav-inner nav {
+    gap: 10px;
+  }
+  .wordmark {
+    font-size: 15px;
+    gap: 6px;
+  }
+  .wordmark .brand-symbol {
+    width: 24px;
+    height: 24px;
+  }
+  .open-source-note {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+  .github-nav,
+  .theme-trigger {
+    width: 40px;
+    min-width: 40px;
+  }
+}
+@media (max-width: 640px) {
+  .search-start {
+    padding-bottom: 40px;
+  }
+}
