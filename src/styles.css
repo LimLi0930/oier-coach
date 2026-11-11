@@ -2936,23 +2936,44 @@ main {
   background: var(--selected);
 }
 .open-source-note {
+  --promo-background: #edf4ff;
+  --promo-heading: #1c3d72;
+  --promo-text: #455d7b;
+  --promo-link: #174fb4;
   margin-top: 36px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
+  padding: 22px 24px 16px;
+  border-radius: 10px;
+  background: var(--promo-background);
+  color: var(--promo-heading);
+}
+:root[data-theme="dark"] .open-source-note {
+  --promo-background: #17243a;
+  --promo-heading: #dce9ff;
+  --promo-text: #b6c8e0;
+  --promo-link: #9bc1ff;
 }
 .open-source-note h2 {
   font-size: 16px;
   margin-bottom: 8px;
 }
 .search-start .open-source-note p {
+  color: var(--promo-text);
   font-size: 14px;
   line-height: 1.75;
 }
 .open-source-note > a {
+  color: var(--promo-link);
   margin-top: 12px;
   min-height: 44px;
   font-size: 14px;
   font-weight: 600;
+}
+.open-source-note > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.open-source-note > a:focus-visible {
+  outline-color: var(--promo-link);
 }
 .community-links {
   display: flex;
@@ -2980,7 +3001,7 @@ main {
   }
   .open-source-note {
     margin-top: 24px;
-    padding-top: 20px;
+    padding: 18px 18px 12px;
   }
   .github-nav,
   .theme-trigger {
@@ -2990,6 +3011,6 @@ main {
 }
 @media (max-width: 640px) {
   .search-start {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
   }
 }
