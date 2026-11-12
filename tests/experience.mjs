@@ -204,6 +204,35 @@ try {
       await page.goto(origin);
       await expect(page.locator(".search-start")).toBeVisible();
       await theme(mode);
+      await page.evaluate(() => document.fonts.ready);
+      const footerAlignment = await page.evaluate(() => {
+        const textCenter = (selector) => {
+          const node = document.querySelector(selector);
+          const range = document.createRange();
+          range.selectNode(node.firstChild);
+          const rect = range.getBoundingClientRect();
+          return rect.top + rect.height / 2;
+        };
+        return {
+          count: textCenter(".visitor-counts > span"),
+          secondCount: textCenter(".visitor-counts > span:nth-child(2)"),
+          link: textCenter(".footer-links a"),
+          notice: textCenter(".footer-notice"),
+        };
+      });
+      assert.ok(
+        Math.abs(footerAlignment.count - footerAlignment.secondCount) < 1,
+        `Visitor counts are misaligned at ${width} in ${mode}`,
+      );
+      assert.ok(
+        Math.abs(footerAlignment.link - footerAlignment.notice) < 1,
+        `Footer navigation text is misaligned at ${width} in ${mode}`,
+      );
+      if (width > 800)
+        assert.ok(
+          Math.abs(footerAlignment.count - footerAlignment.link) < 1,
+          `Visitor counts and footer links are misaligned at ${width} in ${mode}`,
+        );
       const footer = await page.locator(".site-footer").boundingBox();
       assert.ok(
         Math.abs(footer.y + footer.height - 900) < 2,

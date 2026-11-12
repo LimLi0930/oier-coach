@@ -588,7 +588,7 @@ input::placeholder {
 }
 .site-footer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 24px 0 32px;
@@ -607,6 +607,7 @@ input::placeholder {
 }
 .footer-links {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .back-link {
