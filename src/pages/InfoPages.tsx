@@ -13,6 +13,9 @@ export function RulesPage() {
       <section className="surface prose">
         <h2>赛事与积分</h2>
         <p>
+          <strong>本站未收录 CSP-J、CSP-S，相关成绩不参与本站排名。</strong>
+        </p>
+        <p>
           教练榜和学生榜使用同一套单场积分规则。计分赛事包括 NOI
           正式赛、夏令营／D 类、NOIP、WC 常规组、APIO 常规类别及
           IOI。小学、初中和高中的有效成绩均可计分。

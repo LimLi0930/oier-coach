@@ -15,13 +15,26 @@ export interface Manifest {
   dataPath: string;
   index: string;
   studentIndex: string;
+  studentDirectory?: string;
+  coachDirectory?: string;
+  directoryBytes?: Record<string, number>;
   studentYears: number[];
   studentProvinces: string[];
   indexedStudentCount: number;
   rankedStudentCount: number;
 }
 
+export interface PersonPreviewData {
+  students?: { id: string; name: string; score: string | null }[];
+  guidance?: {
+    schoolYear: number;
+    province: string;
+    coaches: CoachReference[];
+  }[];
+}
+
 export interface Coach {
+  preview?: PersonPreviewData;
   id: string;
   name: string;
   province: string;
@@ -51,6 +64,7 @@ export interface CoachReference {
 }
 
 export interface StudentSummary extends Student {
+  preview?: PersonPreviewData;
   provinces: string[];
   currentRank: number | null;
   peakRank: number | null;

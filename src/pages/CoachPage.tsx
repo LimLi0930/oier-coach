@@ -32,8 +32,13 @@ function CoachContent({
     ? requested
     : Number(manifest.asOf.slice(0, 4));
   const [showAll, setShowAll] = useState(false);
+  const knownPopulation = coach.history.find(
+    (point) => point.year === year,
+  )?.population;
   const annual = useResource<RankingSnapshot>(
-    `${manifest.dataPath}rankings/${year}.json`,
+    knownPopulation === undefined
+      ? `${manifest.dataPath}rankings/${year}.json`
+      : null,
   );
   const students = useMemo(
     () => studentContributions(coach.students, coach.results, year),
@@ -56,7 +61,7 @@ function CoachContent({
         <TrendPanel
           history={coach.history}
           year={year}
-          population={annual.data?.population}
+          population={knownPopulation ?? annual.data?.population}
           error={annual.error}
           retry={annual.retry}
           onChange={chooseYear}

@@ -1,3 +1,9 @@
+import {
+  SiteNotice,
+  noticeWasRead,
+  rememberNotice,
+} from "./components/SiteNotice";
+import { DataPreparation } from "./components/DataPreparation";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { Github } from "lucide-react";
@@ -70,6 +76,11 @@ function MainNavigation() {
 }
 
 export default function App() {
+  const [noticeOpen, setNoticeOpen] = useState(() => !noticeWasRead());
+  function closeNotice() {
+    rememberNotice();
+    setNoticeOpen(false);
+  }
   const manifest = useResource<Manifest>("/data/manifest.json");
   const location = useLocation();
   useEffect(() => {
@@ -77,8 +88,10 @@ export default function App() {
       document.title = "OIer Coach · 信奥教练与学生榜";
   }, [location.pathname]);
   return (
-    <PersonPreview manifest={manifest.data}>
+    <PersonPreview manifest={manifest.data} enabled={!noticeOpen}>
       <ScrollRestoration />
+      {manifest.data && <DataPreparation manifest={manifest.data} />}
+      <SiteNotice open={noticeOpen} onClose={closeNotice} />
       <a className="skip-link" href="#main">
         跳到主要内容
       </a>
@@ -169,6 +182,12 @@ export default function App() {
                 <span>信奥教练与学生榜</span>
               </div>
               <div className="footer-links">
+                <button
+                  className="footer-notice"
+                  onClick={() => setNoticeOpen(true)}
+                >
+                  收录公告
+                </button>
                 <Link to="/rules">计分规则</Link>
                 <Link to="/contribute">参与修订</Link>
                 {repositoryUrl && (

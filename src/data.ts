@@ -1,23 +1,161 @@
 import { useEffect, useState } from "react";
 import Decimal from "decimal.js";
-import type { AttributedResult, Student } from "./types";
+import type {
+  AttributedResult,
+  Student,
+  Manifest,
+  Entity,
+  RankedPerson,
+  PersonPreviewData,
+  CoachReference,
+} from "./types";
 
 Decimal.set({ precision: 64 });
 
 const resourceCache = new Map<string, unknown>();
 const pendingResources = new Map<string, Promise<unknown>>();
 
+export interface ResourceProgress {
+  loaded: number;
+  total?: number;
+}
+const resourceProgress = new Map<string, ResourceProgress>();
+const progressListeners = new Map<
+  string,
+  Set<(progress: ResourceProgress) => void>
+>();
+const expectedBytes = new Map<string, number>();
+const cachePrefix = "oier-coach-directory-";
+
+export function directoryUrl(manifest: Manifest, entity: Entity) {
+  return (
+    manifest.dataPath +
+    (entity === "coaches"
+      ? (manifest.coachDirectory ?? manifest.index)
+      : (manifest.studentDirectory ?? manifest.studentIndex))
+  );
+}
+
+function decodeResource(data: unknown): unknown {
+  const packed = data as {
+    format?: string;
+    entity?: Entity;
+    fields: string[];
+    rows: unknown[][];
+    coachReferences?: [string, string, string][];
+  };
+  if (packed?.format !== "person-directory-v1") return data;
+  const references: CoachReference[] = (packed.coachReferences ?? []).map(
+    ([id, name, province]) => ({ id, name, province }),
+  );
+  return packed.rows.map((row) => {
+    const person = Object.fromEntries(
+      packed.fields.map((field, index) => [field, row[index]]),
+    );
+    const preview: PersonPreviewData = {};
+    if (packed.entity === "coaches") {
+      preview.students = (
+        person.preview as [string, string, string | null][]
+      ).map(([id, name, score]) => ({ id, name, score }));
+    } else {
+      person.coaches = (person.coaches as number[]).map(
+        (index) => references[index],
+      );
+      preview.guidance = (person.preview as [number, string, number[]][]).map(
+        ([schoolYear, province, ids]) => ({
+          schoolYear,
+          province,
+          coaches: ids.map((index) => references[index]),
+        }),
+      );
+    }
+    return { ...person, preview } as unknown as RankedPerson;
+  });
+}
+
+async function directoryCache(url: string): Promise<Cache | undefined> {
+  const version =
+    /^\/data\/([a-f0-9]{16})\/(coaches|students)-directory\.json$/.exec(
+      url,
+    )?.[1];
+  if (!version || !("caches" in window)) return;
+  try {
+    return await caches.open(cachePrefix + version);
+  } catch {
+    return;
+  }
+}
+
+async function fetchResource(url: string): Promise<unknown> {
+  const disk = await directoryCache(url);
+  if (disk) {
+    try {
+      const cached = await disk.match(url);
+      if (cached) return decodeResource(await cached.json());
+    } catch {
+      await disk.delete(url).catch(() => {});
+    }
+  }
+  const response = await fetch(url, {
+    cache: url.endsWith("/manifest.json") ? "no-cache" : "default",
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const savedResponse = disk ? response.clone() : undefined;
+  let data: unknown;
+  if (response.body && url.endsWith("-directory.json")) {
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    const chunks: string[] = [];
+    let loaded = 0;
+    for (;;) {
+      const chunk = await reader.read();
+      if (chunk.done) break;
+      loaded += chunk.value.byteLength;
+      chunks.push(decoder.decode(chunk.value, { stream: true }));
+      const progress = { loaded, total: expectedBytes.get(url) };
+      resourceProgress.set(url, progress);
+      progressListeners.get(url)?.forEach((listener) => listener(progress));
+    }
+    chunks.push(decoder.decode());
+    data = JSON.parse(chunks.join(""));
+  } else data = await response.json();
+  const decoded = decodeResource(data);
+  if (disk && savedResponse) {
+    // A quota or privacy restriction must not prevent normal online use.
+    void disk
+      .put(url, savedResponse)
+      .then(async () => {
+        const names = (await caches.keys()).filter((name) =>
+          name.startsWith(cachePrefix),
+        );
+        const old = names.filter(
+          (name) => name !== cachePrefix + url.split("/")[2],
+        );
+        await Promise.all(
+          old
+            .slice(0, Math.max(0, names.length - 3))
+            .map((name) => caches.delete(name)),
+        );
+      })
+      .catch(() => {});
+  }
+  return decoded;
+}
+
 export function getResource<T>(url: string): Promise<T> {
   if (resourceCache.has(url))
     return Promise.resolve(resourceCache.get(url) as T);
   let request = pendingResources.get(url);
   if (!request) {
-    request = fetch(url, {
-      cache: url.endsWith("/manifest.json") ? "no-cache" : "default",
-    })
-      .then(async (response) => {
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const data: unknown = await response.json();
+    request = fetchResource(url)
+      .then((data) => {
+        if (url.endsWith("/manifest.json")) {
+          const manifest = data as Manifest;
+          for (const [filename, size] of Object.entries(
+            manifest.directoryBytes ?? {},
+          ))
+            expectedBytes.set(manifest.dataPath + filename, size);
+        }
         resourceCache.set(url, data);
         return data;
       })
@@ -34,9 +172,14 @@ export function useResource<T>(url: string | null) {
     error?: string;
   }>({ url: null });
   const [attempt, setAttempt] = useState(0);
+  const [progress, setProgress] = useState<ResourceProgress>();
   useEffect(() => {
     if (!url) return;
     let active = true;
+    setProgress(resourceProgress.get(url));
+    const listeners = progressListeners.get(url) ?? new Set();
+    listeners.add(setProgress);
+    progressListeners.set(url, listeners);
     setState({ url, data: resourceCache.get(url) as T | undefined });
     getResource<T>(url)
       .then((data) => {
@@ -51,6 +194,7 @@ export function useResource<T>(url: string | null) {
       });
     return () => {
       active = false;
+      listeners.delete(setProgress);
     };
   }, [url, attempt]);
   const visible =
@@ -60,7 +204,11 @@ export function useResource<T>(url: string | null) {
           url,
           data: url ? (resourceCache.get(url) as T | undefined) : undefined,
         };
-  return { ...visible, retry: () => setAttempt((value) => value + 1) };
+  return {
+    ...visible,
+    progress: state.url === url ? progress : undefined,
+    retry: () => setAttempt((value) => value + 1),
+  };
 }
 
 export function formatScore(value: string | Decimal | null): string {

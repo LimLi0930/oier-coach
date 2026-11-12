@@ -206,6 +206,8 @@ class BuiltDataTests(unittest.TestCase):
         cls.manifest = json.loads((ROOT / 'public/data/manifest.json').read_text(encoding='utf-8'))
         cls.base = ROOT / 'public/data' / cls.manifest['version']
         cls.index = json.loads((cls.base / 'coaches.json').read_text(encoding='utf-8'))
+        packed = json.loads((cls.base / cls.manifest['coachDirectory']).read_text(encoding='utf-8'))
+        cls.directory = {row[0]: dict(zip(packed['fields'], row)) for row in packed['rows']}
 
     def detail(self, cid):
         return json.loads((self.base / 'coaches' / (cid + '.json')).read_text(encoding='utf-8'))
@@ -312,6 +314,16 @@ class BuiltDataTests(unittest.TestCase):
             data = self.detail(coach['id'])
             self.assertEqual(len({r['id'] for r in data['results']}), len(data['results']))
             self.assertEqual(len({r['studentId'] for r in data['results']}), coach['studentCount'])
+            preview = self.directory[coach['id']]
+            self.assertEqual(preview['currentRank'], coach['currentRank'])
+            student_totals = {}
+            for sid in {r['studentId'] for r in data['results']}:
+                scored = [Decimal(r['score']) for r in data['results'] if r['studentId'] == sid and r['score'] is not None]
+                student_totals[sid] = sum(scored, Decimal(0)) if scored else None
+            leaders = sorted(student_totals, key=lambda sid: (student_totals[sid] is None, -(student_totals[sid] or 0), sid))[:3]
+            self.assertEqual([row[0] for row in preview['preview']], leaders)
+            for sid, name, score in preview['preview']:
+                self.assertEqual(score, str(student_totals[sid].quantize(Decimal('.01'))) if student_totals[sid] is not None else None)
             contributions = [Decimal(r['score']) for r in data['results'] if r['score'] is not None]
             total = sum(contributions, Decimal(0)) if contributions else None
             self.assertEqual(str(total) if total is not None else None, coach['score'])
@@ -359,6 +371,9 @@ class StudentDataTests(unittest.TestCase):
         cls.manifest = json.loads((ROOT / 'public/data/manifest.json').read_text(encoding='utf-8'))
         cls.base = ROOT / 'public/data' / cls.manifest['version']
         cls.index = json.loads((cls.base / 'students.json').read_text(encoding='utf-8'))
+        packed = json.loads((cls.base / cls.manifest['studentDirectory']).read_text(encoding='utf-8'))
+        cls.directory = {row[0]: dict(zip(packed['fields'], row)) for row in packed['rows']}
+        cls.references = packed['coachReferences']
 
     def detail(self, sid):
         return json.loads((self.base / 'students' / (quote(sid, safe='') + '.json')).read_text(encoding='utf-8'))
@@ -381,6 +396,18 @@ class StudentDataTests(unittest.TestCase):
             detail = self.detail(student['id'])
             results = detail['results']
             self.assertEqual(student['resultCount'], len(results))
+            preview = self.directory[student['id']]
+            self.assertEqual(preview['currentRank'], student['currentRank'])
+            self.assertEqual(preview['peakRank'], student['peakRank'])
+            self.assertEqual(preview['provinces'], student['provinces'])
+            self.assertEqual(preview['score'], str(Decimal(student['score']).quantize(Decimal('.01'))) if student['score'] is not None else None)
+            self.assertEqual([self.references[index][0] for index in preview['coaches']], [coach['id'] for coach in student['coaches']])
+            expected_guidance = defaultdict(set)
+            for result in results:
+                expected_guidance[result['schoolYear'], result['province']].update(result['coachIds'])
+            actual_guidance = {(year, province): {self.references[index][0] for index in ids} for year, province, ids in preview['preview']}
+            self.assertEqual(actual_guidance, dict(expected_guidance))
+
             self.assertEqual(len({r['id'] for r in results}), len(results))
             self.assertEqual(len({r['contest'] for r in results}), len(results))
             provinces = {p for r in results if (p := {'内蒙': '内蒙古', '长沙': '湖南'}.get(r['province'], r['province'])) in PROVINCES}

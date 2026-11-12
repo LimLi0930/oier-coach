@@ -119,10 +119,12 @@ export function LoadState({
   error,
   retry,
   title = "正在加载资料",
+  progress,
 }: {
   error?: string;
   retry: () => void;
   title?: string;
+  progress?: { loaded: number; total?: number };
 }) {
   return (
     <section className="load-state surface" role={error ? "alert" : "status"}>
@@ -132,6 +134,24 @@ export function LoadState({
           <p>请检查网络连接后重试。</p>
           <button onClick={retry}>重新加载</button>
         </>
+      ) : progress ? (
+        <div className="download-progress">
+          <progress
+            aria-label="资料下载进度"
+            max={progress.total}
+            value={
+              progress.total
+                ? Math.min(progress.loaded, progress.total)
+                : undefined
+            }
+          />
+          <p>
+            {progress.total
+              ? `${Math.min(100, Math.floor((progress.loaded / progress.total) * 100))}%`
+              : `已加载 ${(progress.loaded / 1048576).toFixed(1)} MB`}{" "}
+            · 资料准备完成后即可在本地查询
+          </p>
+        </div>
       ) : (
         <div className="skeleton-rows" aria-hidden="true">
           <span />

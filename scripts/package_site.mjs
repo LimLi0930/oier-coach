@@ -1,5 +1,6 @@
-import { cp, mkdir, readFile } from "node:fs/promises";
+import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { gzipSync } from "node:zlib";
 
 const root = path.resolve(import.meta.dirname, "..");
 const manifestPath = path.join(root, "public/data/manifest.json");
@@ -14,6 +15,17 @@ await cp(
   { recursive: true },
 );
 await cp(manifestPath, path.join(output, "manifest.json"));
+for (const filename of [
+  manifest.coachDirectory,
+  manifest.studentDirectory,
+].filter(Boolean)) {
+  const source = path.join(output, manifest.version, filename);
+  await writeFile(
+    source + ".gz",
+    gzipSync(await readFile(source), { level: 6 }),
+  );
+}
+
 const licenses = path.join(root, "dist/licenses");
 await mkdir(licenses, { recursive: true });
 for (const [source, name] of [

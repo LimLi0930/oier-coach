@@ -1,3 +1,4 @@
+import { directoryUrl } from "../data";
 import { PersonLink } from "../components/PersonPreview";
 import { useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
@@ -25,10 +26,7 @@ export default function RankingsPage({
   const [params, setParams] = useSearchParams();
   const mode = params.get("board") === "peak" ? "peak" : "current";
   const province = params.get("province") ?? "";
-  const resource = useResource<RankedPerson[]>(
-    manifest.dataPath +
-      (entity === "coaches" ? manifest.index : manifest.studentIndex),
-  );
+  const resource = useResource<RankedPerson[]>(directoryUrl(manifest, entity));
   const filtered = useMemo(() => {
     const rows = (resource.data ?? []).filter(
       (person) => !province || personProvinces(person).includes(province),
@@ -221,7 +219,11 @@ export default function RankingsPage({
             />
           </>
         ) : (
-          <LoadState error={resource.error} retry={resource.retry} />
+          <LoadState
+            error={resource.error}
+            retry={resource.retry}
+            progress={resource.progress}
+          />
         )}
       </section>
     </>

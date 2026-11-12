@@ -504,6 +504,8 @@ def build(update_registry=False):
         destination.write_text(json.dumps(value, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 
     index = []
+    coach_previews = {}
+    student_previews = {}
     for cid, results in coach_results.items():
         coach = coaches[cid]
         history = histories[cid]
@@ -516,6 +518,14 @@ def build(update_registry=False):
                     'score': history[-1]['score'] if history else None, 'studentCount': len(student_ids),
                     'resultCount': len(results), 'pendingCount': sum(r['core'] and r['score'] is None for r in results)})
         index.append(row)
+        contributions = defaultdict(list)
+        for result in results:
+            contributions[result['studentId']].append(result)
+        student_totals = {sid: sum((Decimal(r['score']) for r in rows if r['score'] is not None), Decimal(0))
+                          if any(r['score'] is not None for r in rows) else None
+                          for sid, rows in contributions.items()}
+        leaders = sorted(student_totals, key=lambda sid: (student_totals[sid] is None, -(student_totals[sid] or 0), sid))[:3]
+        coach_previews[cid] = [[sid, students[sid]['name'], str(student_totals[sid].quantize(Decimal('.01'))) if student_totals[sid] is not None else None] for sid in leaders]
         display_results = []
         for record in results:
             attribution = next(a for a in record['attributions'] if a['coachId'] == cid)
@@ -565,6 +575,10 @@ def build(update_registry=False):
                    'peakPopulation': peak['population'] if peak else None,
                    'coachCount': len(related_coaches), 'coaches': related_coaches[:2], 'resultCount': len(results)}
         student_index.append(summary)
+        guidance_groups = defaultdict(set)
+        for result in results:
+            guidance_groups[result['schoolYear'], result['province']].update(a['coachId'] for a in result.get('attributions', []))
+        student_previews[sid] = [[year, province, sorted(ids)] for (year, province), ids in sorted(guidance_groups.items(), key=lambda item: (-item[0][0], item[0][1]))]
         display_results = [{**{key: result[key] for key in student_result_fields},
                             'coachIds': sorted({a['coachId'] for a in result.get('attributions', [])})}
                            for result in sorted(results, key=lambda r: (-r['year'], r['id']))]
@@ -573,6 +587,29 @@ def build(update_registry=False):
               'manualGuidance': [period for period in overrides['guidance'] if period['studentId'] == sid]})
     student_index.sort(key=lambda s: (s['currentRank'] is None, s['currentRank'] or 0, s['id']))
     write('students.json', student_index)
+    # Compact display directories keep exact ranking order while sharing coach references.
+    # Full-precision indices and evidence remain available in the existing JSON exports.
+    references = [[cid, coach['name'], coach['province']] for cid, coach in sorted(coaches.items())]
+    reference_indices = {row[0]: index for index, row in enumerate(references)}
+    directory_bytes = {}
+    for entity, people, previews in [('coaches', index, coach_previews), ('students', student_index, student_previews)]:
+        fields = list(people[0]) + ['preview'] if people else []
+        packed_rows = []
+        for person in people:
+            display = dict(person)
+            display['score'] = str(Decimal(person['score']).quantize(Decimal('.01'))) if person['score'] is not None else None
+            if entity == 'students':
+                display['coaches'] = [reference_indices[coach['id']] for coach in person['coaches']]
+                display['preview'] = [[year, province, [reference_indices[cid] for cid in ids]] for year, province, ids in previews[person['id']]]
+            else:
+                display['preview'] = previews[person['id']]
+            packed_rows.append([display[field] for field in fields])
+        filename = f'{entity}-directory.json'
+        payload = {'format': 'person-directory-v1', 'entity': entity, 'fields': fields, 'rows': packed_rows}
+        if entity == 'students':
+            payload['coachReferences'] = references
+        write(filename, payload)
+        directory_bytes[filename] = (staging / filename).stat().st_size
     for year, snapshot in student_snapshots.items():
         write(f'student-rankings/{year}.json', snapshot)
     write('sources.json', list(sources.values()))
@@ -603,7 +640,8 @@ def build(update_registry=False):
                      'studentCount': len({r['studentId'] for rows in coach_results.values() for r in rows}),
                      'attributedResultCount': len({r['id'] for rows in coach_results.values() for r in rows}),
                      'reviewCount': len(issues), 'years': list(snapshots),
-                     'studentIndex': 'students.json', 'studentYears': list(student_snapshots),
+                     'studentIndex': 'students.json', 'studentDirectory': 'students-directory.json', 'coachDirectory': 'coaches-directory.json',
+                     'directoryBytes': directory_bytes, 'studentYears': list(student_snapshots),
                      'indexedStudentCount': len(student_index),
                      'rankedStudentCount': len(student_snapshots[as_of_year]['entries']) if student_snapshots else 0,
                      'studentProvinces': sorted({province for student in student_index for province in student['provinces']}),

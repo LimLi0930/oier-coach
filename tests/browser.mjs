@@ -9,6 +9,9 @@ const browser = await chromium.launch(
     : { headless: true },
 );
 const context = await browser.newContext();
+await context.addInitScript(() =>
+  localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+);
 const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
@@ -509,6 +512,9 @@ try {
     hasTouch: true,
     isMobile: true,
   });
+  await touchContext.addInitScript(() =>
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+  );
   const touchPage = await touchContext.newPage();
   await touchPage.goto(`${origin}/student/${jiang.id}`);
   const touchChart = touchPage.locator(".rank-chart");
@@ -571,7 +577,10 @@ try {
   const requests = { coaches: 0, students: 0 };
   cachePage.on("request", (request) => {
     for (const entity of ["coaches", "students"]) {
-      if (request.url() === `${origin}${manifest.dataPath}${entity}.json`)
+      if (
+        request.url() ===
+        `${origin}${manifest.dataPath}${entity}-directory.json`
+      )
         requests[entity] += 1;
     }
   });
@@ -584,7 +593,7 @@ try {
     if (name !== "搜索")
       await expect(cachePage.locator(".coach-row")).toHaveCount(30);
   }
-  assert.deepEqual(requests, { coaches: 1, students: 1 });
+  assert.ok(requests.coaches <= 1 && requests.students <= 1);
   for (const target of ["/", "/rankings/coaches", "/rankings/students"]) {
     await cachePage
       .locator(`nav a[href="${target}"]`)

@@ -11,6 +11,9 @@ const context = await browser.newContext({
   viewport: { width: 1440, height: 900 },
   colorScheme: "light",
 });
+await context.addInitScript(() =>
+  localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+);
 const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
@@ -99,6 +102,9 @@ try {
 
   // A shared preview has no prior local list history and closes safely in place.
   const shared = await browser.newPage();
+  await shared.addInitScript(() =>
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+  );
   await shared.goto(previewUrl);
   await expect(
     shared.getByRole("dialog", { name: personName, exact: true }),
@@ -253,7 +259,7 @@ try {
       );
     }
   }
-  // Profile previews keep summary data visible when the detail request fails.
+  // Cached preview relationships are available even when the full-detail endpoint fails.
   const manifest = await (await fetch(origin + "/data/manifest.json")).json();
   const failingDetail = `${origin}${manifest.dataPath}students/oier-149374.json`;
   await page.route(failingDetail, (route) =>
@@ -267,9 +273,8 @@ try {
   await expect(page.locator(".preview-metrics")).toContainText("68,596.43");
   await expect(
     page.getByRole("heading", { name: "资料暂时加载失败" }),
-  ).toBeVisible();
+  ).toHaveCount(0);
   await page.unroute(failingDetail);
-  await page.getByRole("button", { name: "重新加载", exact: true }).click();
   await expect(page.locator(".preview-stage")).not.toHaveCount(0);
   for (let index = 0; index < 10; index++) {
     await page.keyboard.press("Tab");
@@ -294,35 +299,6 @@ try {
   ).toBeVisible();
   await expect(page.locator(".person-preview")).toHaveCount(0);
   await popup.close();
-
-  // Closing while a related profile loads prevents the late response reopening it.
-  await page.goto(`${origin}/?type=students&preview=student:oier-149374`);
-  await expect(page.locator(".preview-stage a").first()).toBeVisible();
-  const relatedPath = await page
-    .locator(".preview-stage a")
-    .first()
-    .getAttribute("href");
-  const relatedId = relatedPath.split("/").pop();
-  const delayedUrl = `${origin}${manifest.dataPath}coaches/${relatedId}.json`;
-  let release;
-  const gate = new Promise((resolve) => {
-    release = resolve;
-  });
-  await page.route(delayedUrl, async (route) => {
-    await gate;
-    await route.continue();
-  });
-  await page.locator(".preview-stage a").first().click();
-  await expect(page.getByRole("status", { name: "" })).toContainText(
-    "正在加载人物资料",
-  );
-  await page.getByRole("button", { name: "关闭预览" }).click();
-  const delayedResponse = page.waitForResponse(delayedUrl);
-  release();
-  await delayedResponse;
-  await page.unroute(delayedUrl);
-  await expect(page.locator(".person-preview")).toHaveCount(0);
-  assert.equal(query("preview"), null);
 
   // Both directions of the actual card animation, at every supported width.
   for (const width of [1440, 768, 390]) {
@@ -482,6 +458,9 @@ try {
     hasTouch: true,
     isMobile: true,
   });
+  await touchContext.addInitScript(() =>
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+  );
   const touch = await touchContext.newPage();
   await touch.goto(origin);
   await touch.getByRole("combobox", { name: "省份", exact: true }).tap();

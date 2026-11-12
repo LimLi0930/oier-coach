@@ -17,6 +17,7 @@ import {
 } from "react-router-dom";
 import {
   getResource,
+  directoryUrl,
   formatInteger,
   formatScore,
   rankText,
@@ -35,6 +36,7 @@ import type {
   Manifest,
   RankedPerson,
   StudentDetail,
+  PersonPreviewData,
 } from "../types";
 import { Avatar, isStudent, LoadState, personProvinces } from "./ui";
 
@@ -83,7 +85,9 @@ export function PersonLink({
 export function PersonPreview({
   manifest,
   children,
+  enabled = true,
 }: {
+  enabled?: boolean;
   manifest?: Manifest;
   children: ReactNode;
 }) {
@@ -98,21 +102,27 @@ export function PersonPreview({
   const listPage =
     location.pathname === "/" ||
     /^\/rankings\/(coaches|students)$/.test(location.pathname);
-  const open = Boolean(listPage && match);
+  const open = Boolean(enabled && listPage && match);
   const kind = match?.[1];
   const id = match?.[2];
   const state = location.state as
     | (NavigationState & { previewSummary?: RankedPerson })
     | null;
   const session = state?.previewSession;
-  const resource = useResource<CoachDetail | StudentDetail>(
+  const directory = useResource<RankedPerson[]>(
     open && manifest
+      ? directoryUrl(manifest, kind === "coach" ? "coaches" : "students")
+      : null,
+  );
+  const summary =
+    directory.data?.find((person) => person.id === id) ??
+    (state?.previewSummary?.id === id ? state?.previewSummary : undefined);
+  const resource = useResource<CoachDetail | StudentDetail>(
+    open && manifest && directory.data && !summary?.preview
       ? `${manifest.dataPath}${kind === "coach" ? "coaches" : "students"}/${encodeURIComponent(encodeURIComponent(id!))}.json`
       : null,
   );
-  const person =
-    resource.data ??
-    (state?.previewSummary?.id === id ? state?.previewSummary : undefined);
+  const person = resource.data ?? summary;
   const [pendingTarget, setPendingTarget] = useState<string | null>(null);
   const switchRequest = useRef(0);
   const lastFocus = useRef("");
@@ -127,12 +137,13 @@ export function PersonPreview({
     if (open && manifest) {
       const request = ++switchRequest.current;
       setPendingTarget(target);
-      const separator = target.indexOf(":");
-      const targetId = target.slice(separator + 1);
-      const folder = target.startsWith("coach:") ? "coaches" : "students";
+
       try {
         await getResource(
-          `${manifest.dataPath}${folder}/${encodeURIComponent(encodeURIComponent(targetId))}.json`,
+          directoryUrl(
+            manifest,
+            target.startsWith("coach:") ? "coaches" : "students",
+          ),
         );
       } catch {
         /* The destination preview provides a retry action. */
@@ -316,13 +327,16 @@ export function PersonPreview({
                     </div>
                   </dl>
                 )}
-                {resource.data ? (
+                {person?.preview ? (
+                  <CompactPreviewRelations preview={person.preview} />
+                ) : resource.data ? (
                   <PreviewRelations person={resource.data} />
                 ) : (
                   <LoadState
                     title="正在加载师生信息"
-                    error={resource.error}
-                    retry={resource.retry}
+                    error={directory.error ?? resource.error}
+                    retry={directory.error ? directory.retry : resource.retry}
+                    progress={directory.progress}
                   />
                 )}
               </div>
@@ -418,6 +432,61 @@ function PreviewRelations({ person }: { person: CoachDetail | StudentDetail }) {
             </div>
           </div>
         ))}
+    </section>
+  );
+}
+
+function CompactPreviewRelations({ preview }: { preview: PersonPreviewData }) {
+  if (preview.students)
+    return (
+      <section className="preview-relations">
+        <h3>代表学生</h3>
+        {preview.students.length ? (
+          preview.students.map((student) => (
+            <PersonLink
+              key={student.id}
+              className="preview-related"
+              to={`/student/${encodeURIComponent(student.id)}`}
+            >
+              <span>{student.name}</span>
+              <span className="num">
+                {formatScore(student.score)}
+                <small>指导贡献</small>
+              </span>
+              <ArrowRight size={14} />
+            </PersonLink>
+          ))
+        ) : (
+          <p className="muted">学生资料待补充</p>
+        )}
+      </section>
+    );
+  return (
+    <section className="preview-relations">
+      <h3>指导教练</h3>
+      {preview.guidance?.map((group) => (
+        <div
+          className="preview-stage"
+          key={`${group.schoolYear}/${group.province}`}
+        >
+          <h4>
+            {group.schoolYear}–{group.schoolYear + 1} 学年 ·{" "}
+            {group.province || "地区待补充"}
+          </h4>
+          <div>
+            {group.coaches.length ? (
+              group.coaches.map((coach) => (
+                <PersonLink key={coach.id} to={`/coach/${coach.id}`}>
+                  {coach.name}
+                  <ArrowRight size={13} />
+                </PersonLink>
+              ))
+            ) : (
+              <span className="muted">教练待补充</span>
+            )}
+          </div>
+        </div>
+      ))}
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import { directoryUrl } from "../data";
 import { PersonLink } from "../components/PersonPreview";
 import { useEffect, useMemo, useState } from "react";
 import { Link, Navigate, useSearchParams } from "react-router-dom";
@@ -28,10 +29,7 @@ export default function SearchPage({ manifest }: { manifest: Manifest }) {
   const province = params.get("province") ?? "";
   const [draft, setDraft] = useState(query);
   const [composing, setComposing] = useState(false);
-  const resource = useResource<RankedPerson[]>(
-    manifest.dataPath +
-      (entity === "coaches" ? manifest.index : manifest.studentIndex),
-  );
+  const resource = useResource<RankedPerson[]>(directoryUrl(manifest, entity));
   useEffect(() => {
     setDraft(query);
   }, [query]);
@@ -253,7 +251,8 @@ export default function SearchPage({ manifest }: { manifest: Manifest }) {
           <LoadState
             error={resource.error}
             retry={resource.retry}
-            title="正在检索人物"
+            title="正在准备查询资料"
+            progress={resource.progress}
           />
         ))}
     </>

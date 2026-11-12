@@ -32,8 +32,13 @@ function StudentContent({
   const year = manifest.studentYears.includes(requested)
     ? requested
     : Number(manifest.asOf.slice(0, 4));
+  const knownPopulation = student.history.find(
+    (point) => point.year === year,
+  )?.population;
   const annual = useResource<StudentRankingSnapshot>(
-    `${manifest.dataPath}student-rankings/${year}.json`,
+    knownPopulation === undefined
+      ? `${manifest.dataPath}student-rankings/${year}.json`
+      : null,
   );
   useEffect(() => {
     document.title = `${student.name} · OIer Coach`;
@@ -89,7 +94,7 @@ function StudentContent({
         <TrendPanel
           history={student.history}
           year={year}
-          population={annual.data?.population}
+          population={knownPopulation ?? annual.data?.population}
           error={annual.error}
           retry={annual.retry}
           onChange={chooseYear}

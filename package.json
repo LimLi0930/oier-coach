@@ -10,7 +10,7 @@
     "test": "npm run test:data && tsc -b",
     "build": "npm run data && tsc -b && vite build && node scripts/package_site.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "test:ui": "node tests/browser.mjs && node tests/experience.mjs"
+    "test:ui": "node tests/browser.mjs && node tests/experience.mjs && node tests/loading.mjs"
   },
   "dependencies": {
     "@fontsource/source-sans-3": "^5.2.9",

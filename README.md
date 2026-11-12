@@ -42,7 +42,7 @@ npm run dev
 
 省份支持中文、全拼和首字母输入，确认候选后应用筛选。顶部主题入口提供跟随系统、浅色和深色，保存本地偏好。页面采用黑白灰为主的语义颜色，B2 图标在两种主题下自动适配，短页面页脚贴合视口底部。
 
-前端通过 URL 的 `preview=student:oier-UID` 或 `preview=coach:coach-ID` 表示预览人物，通过路由状态保存来源和预览栈。滚动位置按浏览器历史记录存入 sessionStorage，主题选择存入 localStorage。资料仍通过现有索引与详情接口加载。
+前端通过 URL 的 `preview=student:oier-UID` 或 `preview=coach:coach-ID` 表示预览人物，通过路由状态保存来源和预览栈。滚动位置按浏览器历史记录存入 sessionStorage，主题选择存入 localStorage。首次访问公告说明 CSP-J／S 未收录、计分方式和资料修订入口，阅读状态按公告版本保存在 localStorage，页脚可重新打开。
 
 ## 校验与生产构建
 
@@ -62,7 +62,7 @@ TEST_URL=http://127.0.0.1:4173 npm run test:ui
 
 PowerShell 使用 `$env:TEST_URL='http://127.0.0.1:4173'` 后运行 `npm run test:ui`。
 
-生成的 `dist/` 包含前端和当前数据版本。两类搜索索引按需加载并缓存，个人详情及年度排名按需获取。构建过程校验固定基线的哈希，原始 SQLite 和抓取缓存保留在本地数据目录。
+生成的 `dist/` 包含前端和当前数据版本。两类紧凑查询目录在进入站点后预加载，下载期间显示进度，按数据版本写入浏览器 Cache Storage。目录包含人物基础信息、代表学生和历学年教练摘要，人物浮窗可直接在本地查询。完整成绩在进入主页后按需获取，历史曲线已有的人数信息直接复用。缓存受限时自动回退网络加载。构建过程校验固定基线的哈希，原始 SQLite 和抓取缓存保留在本地数据目录。
 
 ## 数据结构
 
@@ -74,6 +74,7 @@ PowerShell 使用 `$env:TEST_URL='http://127.0.0.1:4173'` 后运行 `npm run tes
 - `src/types.ts` 定义公开数据模型。
 - `public/data/manifest.json` 指向完整生成的数据版本。版本目录中的 `review.json` 保存待核对事项，`sources.json` 保存来源清单。
 - 版本目录中的 `coverage.json` 按年份、赛事和学段核对全部成绩的教师证据、归属与计分覆盖率。统计以去重后的考试记录为单位。
+- `coaches-directory.json`、`students-directory.json` 为列式紧凑查询包，包含浮窗师生摘要，显示分值保留两位小数。完整精度的排名计算与原始索引保存在原有输出中。版本清单提供目录文件名与解压后字节数，生产包附带 gzip 文件。
 - `coaches.json`、`students.json` 分别为两类人物索引，`coaches/`、`students/` 保存逐人详情，`rankings/`、`student-rankings/` 保存年度排名。清单中的 `studentIndex`、`studentYears`、`studentProvinces` 为学生数据入口。
 - 学生榜覆盖本站赛事范围内的全部选手。本人积分按有效考试去重求和，缺少教练归属的成绩也计分，多教练关系每场只增加一次学生积分。两类人物分别从最早可计分年份回算历史。
 
