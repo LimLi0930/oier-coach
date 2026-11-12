@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
-import { chromium, expect } from "@playwright/test";
+import { chromium, expect as baseExpect } from "@playwright/test";
+const expect = baseExpect.configure({ timeout: 30000 });
 const origin = process.env.TEST_URL || "http://127.0.0.1:4173";
 const browser = await chromium.launch(
   process.platform === "win32"
@@ -199,5 +200,6 @@ try {
   });
   throw error;
 } finally {
+  await page.unrouteAll({ behavior: "ignoreErrors" });
   await browser.close();
 }

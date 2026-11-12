@@ -138,6 +138,13 @@ try {
     await new Promise((resolve) =>
       requestAnimationFrame(() => requestAnimationFrame(resolve)),
     );
+    for (
+      let frame = 0;
+      frame < 8 && !nav.querySelector(".nav-indicator").getAnimations().length;
+      frame++
+    ) {
+      await new Promise((resolve) => requestAnimationFrame(resolve));
+    }
     return {
       navigation: nav
         .querySelector(".nav-indicator")
