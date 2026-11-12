@@ -1,3 +1,4 @@
+import { VisitorCounts } from "./components/VisitorCounts";
 import {
   SiteNotice,
   noticeWasRead,
@@ -181,6 +182,7 @@ export default function App() {
                 <strong>OIer Coach</strong>
                 <span>信奥教练与学生榜</span>
               </div>
+              <VisitorCounts />
               <div className="footer-links">
                 <button
                   className="footer-notice"

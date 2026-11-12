@@ -11,6 +11,7 @@ export function RulesPage() {
         </div>
       </div>
       <section className="surface prose">
+        <p className="notice-disclaimer">仅供参考娱乐，不构成实际对比和意见</p>
         <h2>赛事与积分</h2>
         <p>
           <strong>本站未收录 CSP-J、CSP-S，相关成绩不参与本站排名。</strong>
@@ -68,8 +69,9 @@ export function RulesPage() {
         <p>
           本站按学年内 NOIP → WC → APIO → NOI → IOI 的赛事顺序处理。例如 NOIP
           2025 与 WC、APIO、NOI、IOI 2026 同属 2025 学年，IOI
-          缺少名单时优先沿用此前的 NOI
-          名单。同场不同类别按同一时间处理。学年早期尚无名单、最近名单不完整、同场来源有冲突或身份待核对时，缺失归属等待补充。
+          缺少名单时优先沿用此前的 NOI 名单。IOI
+          所在学年缺少可用名单时，继续查找该选手同省份最近一届此前 NOI
+          的明确教练名单。同场不同类别按同一时间处理。学年早期尚无名单、最近名单不完整、同场来源有冲突或身份待核对时，缺失归属等待补充。
         </p>
         <p>
           教练按规范化姓名与省份汇总，同省同名的跨学校、跨校区记录进入同一档案。选手优先对应

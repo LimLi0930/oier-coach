@@ -1,3 +1,4 @@
+import { mockVisits } from "./support.mjs";
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 import { chromium, expect as baseExpect } from "@playwright/test";
@@ -12,6 +13,7 @@ const manifest = await (await fetch(origin + "/data/manifest.json")).json();
 const context = await browser.newContext({
   viewport: { width: 1440, height: 900 },
 });
+await mockVisits(context);
 const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
@@ -39,6 +41,7 @@ try {
   const notice = page.locator(".site-notice");
   for (const text of [
     "CSP-J／S",
+    "仅供参考娱乐，不构成实际对比和意见",
     "1.25",
     "401",
     "IOI 权重为 1",
@@ -145,8 +148,9 @@ try {
     Object.defineProperty(window, "caches", {
       value: { open: () => Promise.reject(new Error("Storage disabled")) },
     });
-    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1");
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2");
   });
+  await mockVisits(restricted);
   const restrictedPage = await restricted.newPage();
   await restrictedPage.goto(origin + "/?q=hxj");
   await expect(
@@ -157,8 +161,9 @@ try {
   // A failed initial directory request is retryable while the notice is already read.
   const failed = await browser.newContext();
   await failed.addInitScript(() =>
-    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2"),
   );
+  await mockVisits(failed);
   const failedPage = await failed.newPage();
   await failedPage.route("**/students-directory.json", (route) =>
     route.fulfill({ status: 503, body: "Temporary error" }),

@@ -179,6 +179,33 @@ class AttributionTests(unittest.TestCase):
         self.assertLess(contest_order(record('noip', 2025)), contest_order(record('wc', 2026, contestType='WC')))
         self.assertLess(contest_order(record('noi', 2026, contestType='NOI')), contest_order(record('ioi', 2026, contestType='IOI')))
 
+    def test_ioi_uses_previous_year_noi_when_only_ioi_remains(self):
+        rows = {'noi': record('noi', 2024, schoolYear=2023, contestType='NOI', teachers=['a','b']),
+                'ioi': record('ioi', 2025, schoolYear=2024, contestType='IOI'),
+                'wc': record('wc', 2025, schoolYear=2024, contestType='WC'),
+                'foreign': record('foreign', 2025, schoolYear=2024, province='四川', contestType='IOI')}
+        resolve_attributions(rows, [], {})
+        self.assertEqual([a['coachId'] for a in rows['ioi']['attributions']], ['a','b'])
+        self.assertEqual(rows['ioi']['attributions'][0]['evidence'], ['noi'])
+        self.assertFalse(rows['wc']['attributions'])
+        self.assertFalse(rows['foreign']['attributions'])
+
+    def test_ioi_prefers_current_year_list_and_blocks_ambiguous_noi(self):
+        rows = {'old': record('old', 2023, schoolYear=2022, contestType='NOI', teachers=['a']),
+                'recent': record('recent', 2024, schoolYear=2023, contestType='NOI', teachers=['b']),
+                'ioi': record('ioi', 2025, schoolYear=2024, contestType='IOI')}
+        resolve_attributions(rows, [], {})
+        self.assertEqual(rows['ioi']['attributions'][0]['coachId'], 'b')
+        rows['noip'] = record('noip', 2024, teachers=['c'])
+        resolve_attributions(rows, [], {})
+        self.assertEqual(rows['ioi']['attributions'][0]['coachId'], 'c')
+        del rows['noip']
+        rows['recent']['incompleteEvidence'] = True
+        resolve_attributions(rows, [], {})
+        self.assertFalse(rows['ioi']['attributions'])
+        resolve_attributions(rows, [], {'ioi': {'coachIds': [], 'sources': ['https://example.org'], 'reason': '撤销归属'}})
+        self.assertFalse(rows['ioi']['attributions'])
+
     def test_primary_and_unknown(self):
         self.assertEqual(stage_of('小六'), 'primary')
         self.assertEqual(stage_of(''), 'unknown')
@@ -340,8 +367,12 @@ class BuiltDataTests(unittest.TestCase):
                     for anchor_id in result['attribution']['evidence']:
                         anchor = anchors[anchor_id]
                         self.assertLess(contest_order(anchor), contest_order(result))
-                        self.assertEqual((anchor['studentId'], anchor['schoolYear'], anchor['province']),
-                                         (result['studentId'], result['schoolYear'], result['province']))
+                        self.assertEqual((anchor['studentId'], anchor['province']), (result['studentId'], result['province']))
+                        if anchor['schoolYear'] != result['schoolYear']:
+                            self.assertEqual(result['contestType'], 'IOI')
+                            self.assertEqual(anchor['contestType'], 'NOI')
+                            self.assertLess(anchor['schoolYear'], result['schoolYear'])
+                            self.assertIn('最近一届', result['attribution']['note'])
 
                 if not result['core']:
                     self.assertIsNone(result['score'])

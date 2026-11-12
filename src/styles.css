@@ -3285,3 +3285,65 @@ main:has(.search-intro:not(.has-results)) {
     min-height: 44px;
   }
 }
+.visitor-counts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.visitor-counts strong {
+  font-weight: 500;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.visits-unavailable {
+  font-size: 11px;
+}
+@media (max-width: 800px) {
+  .site-footer > .visitor-counts {
+    width: 100%;
+  }
+  .site-footer {
+    row-gap: 8px;
+  }
+}
+@media (max-width: 640px) {
+  .site-footer {
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+  .route-frame:has(.search-intro:not(.has-results)) .site-footer {
+    row-gap: 4px;
+  }
+}
+.site-footer .visitor-counts > span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.site-footer .visitor-counts strong {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+}
+@media (max-width: 640px) {
+  .search-intro:not(.has-results) {
+    padding-top: clamp(12px, calc((100dvh - 580px) * 0.18), 60px);
+  }
+}
+@media (max-width: 640px) and (max-height: 620px) {
+  .search-workspace:not(.has-results) .search-start > div {
+    display: none;
+  }
+  .search-workspace:not(.has-results) .open-source-note {
+    margin-top: 16px;
+  }
+}
+.notice-body .notice-disclaimer,
+.prose .notice-disclaimer {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}

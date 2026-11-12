@@ -1,0 +1,25 @@
+[Unit]
+Description=OIer Coach visitor counts
+After=network.target
+
+[Service]
+Type=simple
+User=oier-coach
+Group=oier-coach
+WorkingDirectory=/opt/oier-coach
+ExecStart=/usr/bin/python3 /opt/oier-coach/visits.py
+Environment=SITE_ORIGIN=https://oier.kdtree.xyz
+Environment=VISITS_DB=/var/lib/oier-coach/visits.sqlite3
+Restart=on-failure
+RestartSec=3
+StateDirectory=oier-coach
+StateDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/oier-coach
+
+[Install]
+WantedBy=multi-user.target

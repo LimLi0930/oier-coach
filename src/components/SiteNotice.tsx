@@ -4,7 +4,7 @@ import { External } from "./ui";
 import { repositoryUrl } from "../data";
 import { Link } from "react-router-dom";
 
-export const noticeVersion = "2026-11-csp-scoring-v1";
+export const noticeVersion = "2026-11-csp-scoring-v2";
 export const noticeStorageKey = "oier-coach-notice";
 export function noticeWasRead() {
   try {
@@ -52,6 +52,9 @@ export function SiteNotice({
             <p id="site-notice-intro">
               首次访问，请先了解本站的收录与计分方式。
             </p>
+            <p className="notice-disclaimer">
+              仅供参考娱乐，不构成实际对比和意见
+            </p>
             <section className="notice-scope">
               <h3>本站未收录 CSP-J／S</h3>
               <p>
@@ -70,7 +73,9 @@ export function SiteNotice({
                 NOIP 为 0.15，旧提高组为 0.1、普及组为 0.06。
               </p>
               <p>
-                学生积分按有效考试去重求和。明确列名的教练各获得全额贡献。缺少名单时，同一学生、学年与省份内按赛事时间顺序沿用此前最近的完整教练名单。当前榜累计全部有效贡献，巅峰榜取历年最佳名次。
+                学生积分按有效考试去重求和。明确列名的教练各获得全额贡献。缺少名单时，同一学生、学年与省份内按赛事时间顺序沿用此前最近的完整教练名单。IOI
+                所在学年缺少可用名单时，沿用该选手同省份最近一届此前 NOI
+                的明确名单。当前榜累计全部有效贡献，巅峰榜取历年最佳名次。
               </p>
               <Link to="/rules" onClick={onClose}>
                 查看完整计分规则

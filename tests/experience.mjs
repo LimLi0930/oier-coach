@@ -1,6 +1,8 @@
+import { mockVisits } from "./support.mjs";
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
-import { chromium, expect } from "@playwright/test";
+import { chromium, expect as baseExpect } from "@playwright/test";
+const expect = baseExpect.configure({ timeout: 30000 });
 const origin = process.env.TEST_URL || "http://127.0.0.1:4173";
 const browser = await chromium.launch(
   process.platform === "win32"
@@ -12,8 +14,9 @@ const context = await browser.newContext({
   colorScheme: "light",
 });
 await context.addInitScript(() =>
-  localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+  localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2"),
 );
+await mockVisits(context);
 const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
@@ -102,8 +105,9 @@ try {
 
   // A shared preview has no prior local list history and closes safely in place.
   const shared = await browser.newPage();
+  await mockVisits(shared.context());
   await shared.addInitScript(() =>
-    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2"),
   );
   await shared.goto(previewUrl);
   await expect(
@@ -260,7 +264,9 @@ try {
     }
   }
   // Cached preview relationships are available even when the full-detail endpoint fails.
-  const manifest = await (await fetch(origin + "/data/manifest.json")).json();
+  const manifest = await (
+    await page.request.get(origin + "/data/manifest.json", { timeout: 60000 })
+  ).json();
   const failingDetail = `${origin}${manifest.dataPath}students/oier-149374.json`;
   await page.route(failingDetail, (route) =>
     route.fulfill({ status: 503, body: "Unavailable" }),
@@ -452,6 +458,9 @@ try {
     assert.equal(await page.evaluate(() => scrollY), 0);
   }
 
+  await expect(page.locator(".visitor-counts")).toContainText("今日访问 12 人");
+  await expect(page.locator(".visitor-counts")).toContainText("总访问 345 人");
+
   // Real touch targets for the province filter and phone sheet.
   const touchContext = await browser.newContext({
     viewport: { width: 390, height: 844 },
@@ -459,8 +468,9 @@ try {
     isMobile: true,
   });
   await touchContext.addInitScript(() =>
-    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2"),
   );
+  await mockVisits(touchContext);
   const touch = await touchContext.newPage();
   await touch.goto(origin);
   await touch.getByRole("combobox", { name: "省份", exact: true }).tap();

@@ -40,3 +40,12 @@ for (const [source, name] of [
   await cp(path.join(root, source), path.join(licenses, name));
 }
 console.log(`Packaged immutable data snapshot ${manifest.version}`);
+
+await cp(path.join(root, "server"), path.join(root, "dist/server"), {
+  recursive: true,
+  filter: (source) => !source.includes("__pycache__"),
+});
+await cp(
+  path.join(root, "deploy/oier-coach-visits.service"),
+  path.join(root, "dist/server/oier-coach-visits.service"),
+);

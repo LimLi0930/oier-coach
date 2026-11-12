@@ -31,7 +31,7 @@ PROVINCES = '安徽 北京 福建 甘肃 广东 广西 贵州 海南 河北 河�
 AWARDS = ['金牌', '银牌', '铜牌', '一等奖', '二等奖', '三等奖', '国际金牌', '国际银牌', '国际铜牌', '前5%', '前15%', '前25%']
 TYPES = ['NOI', 'NOIP提高', 'CTSC', 'APIO', 'NOID类', 'IOI', 'NOIP普及', 'WC', 'CSP提高', 'CSP入门', 'NOIP', 'NGOI', 'NOIST', 'WC-AI']
 SUPPORTED = set(WEIGHTS) | {'WC-AI', 'APIO-online'}
-ATTRIBUTION_VERSION = 'school-year-chronological-v2'
+ATTRIBUTION_VERSION = 'school-year-chronological-ioi-v3'
 CONTEST_ORDER = {'WC': 0, 'WC-AI': 0, 'APIO': 1, 'APIO-online': 1,
                  'NOI': 2, 'NOID类': 2, 'IOI': 3, 'NOIP': 4, 'NOIP提高': 4, 'NOIP普及': 4}
 
@@ -205,12 +205,36 @@ def contest_order(record):
     return record['year'], CONTEST_ORDER[record['contestType']]
 
 
+def previous_noi_teachers(record, noi_records, exceptions):
+    """IOI can reuse its latest earlier NOI's explicit list across school years."""
+    candidates = [row for row in noi_records.get((record['studentId'], record['province']), [])
+                  if contest_order(row) < contest_order(record)]
+    if not candidates:
+        return [], []
+    latest = max(contest_order(row) for row in candidates)
+    rows = [row for row in candidates if contest_order(row) == latest]
+    teacher_sets, evidence = set(), []
+    for row in rows:
+        correction = exceptions.get(row['id'])
+        teachers = correction['coachIds'] if correction else row['directCoaches']
+        if not teachers or (not correction and (row['incompleteEvidence'] or len({tuple(sorted(set(names))) for names in row['teacherSets'] if names}) != 1)):
+            return [], []
+        teacher_sets.add(tuple(sorted(set(teachers))))
+        evidence.append(row['id'])
+    if len(teacher_sets) != 1:
+        return [], []
+    return list(next(iter(teacher_sets))), sorted(evidence)
+
+
 def resolve_attributions(records, guidance, exceptions):
     """Apply explicit lists, then carry the latest complete list forward within its school year."""
     groups = defaultdict(list)
+    noi_records = defaultdict(list)
     for record in records.values():
         if record['eligible']:
             groups[record['studentId'], record.get('schoolYear'), record['province']].append(record)
+            if record['contestType'] == 'NOI':
+                noi_records[record['studentId'], record['province']].append(record)
     periods, pending = [], []
     for (sid, school_year, province), group in groups.items():
         latest_teachers, latest_evidence = [], []
@@ -238,6 +262,14 @@ def resolve_attributions(records, guidance, exceptions):
                     teachers, kind, evidence, note = ranges[0]['coachIds'], 'manual', ranges[0]['sources'], ranges[0]['reason']
                 elif can_inherit and latest_teachers and not record['incompleteEvidence']:
                     teachers, kind, evidence, note = latest_teachers, 'inferred', latest_evidence, '沿用同一选手、学年和省份内最近一场已填写的教师名单'
+                elif record['contestType'] == 'IOI' and can_inherit and not anchor_conflict and not record['incompleteEvidence']:
+                    teachers, evidence = previous_noi_teachers(record, noi_records, exceptions)
+                    kind, note = 'inferred', 'IOI 缺少当学年可用名单，沿用最近一届此前 NOI 的明确教练名单'
+                    if teachers:
+                        has_evidence = True
+                        anchors.extend(evidence)
+                    else:
+                        pending.append({'resultId': record['id'], 'studentId': sid, 'reason': 'no-earlier-noi-list'})
                 else:
                     teachers, kind, evidence, note = [], 'inferred', [], ''
                     if has_evidence:

@@ -53,3 +53,9 @@ SITE_ROOT=/srv/oier-coach bash deploy/rollback.sh
 服务器地址、域名、证书和仓库地址由实际发布环境提供。本地实现阶段以生产构建与浏览器验收作为验证范围。
 
 构建与 Actions 配置参考官方文档。[Vite 静态部署](https://vite.dev/guide/static-deploy.html) · [GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions)
+
+## 访问统计服务
+
+`server/visits.py` 使用 Python 标准库与 SQLite，监听 `127.0.0.1:8787`。将脚本放到 `/opt/oier-coach/visits.py`，使用独立系统用户 `oier-coach` 运行，将 `deploy/oier-coach-visits.service` 安装到 `/etc/systemd/system/` 并启用。服务设置 `StateDirectory=oier-coach`，统计库固定为 `/var/lib/oier-coach/visits.sqlite3`。备份时使用 SQLite backup API 或先停止服务，以同时保留 WAL 中的数据。
+
+Nginx 模板通过 `/api/visits` 转发 POST 请求，禁用该接口缓存和访问日志。修改域名时同步更新 service 中的 `SITE_ORIGIN`。页面使用一年有效的随机 Cookie 按浏览器去重，清除 Cookie 或更换浏览器可能重复计数，今日以北京时间计算。静态预览或接口不可用时页脚显示破折号及统计暂不可用提示。

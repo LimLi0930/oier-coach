@@ -1,7 +1,9 @@
+import { mockVisits } from "./support.mjs";
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
-import { chromium, expect } from "@playwright/test";
+import { chromium, expect as baseExpect } from "@playwright/test";
 
+const expect = baseExpect.configure({ timeout: 30000 });
 const origin = process.env.TEST_URL || "http://127.0.0.1:5173";
 const browser = await chromium.launch(
   process.platform === "win32"
@@ -10,8 +12,9 @@ const browser = await chromium.launch(
 );
 const context = await browser.newContext();
 await context.addInitScript(() =>
-  localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+  localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2"),
 );
+await mockVisits(context);
 const page = await context.newPage();
 const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
@@ -520,8 +523,9 @@ try {
     isMobile: true,
   });
   await touchContext.addInitScript(() =>
-    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v1"),
+    localStorage.setItem("oier-coach-notice", "2026-11-csp-scoring-v2"),
   );
+  await mockVisits(touchContext);
   const touchPage = await touchContext.newPage();
   await touchPage.goto(`${origin}/student/${jiang.id}`);
   const touchChart = touchPage.locator(".rank-chart");
